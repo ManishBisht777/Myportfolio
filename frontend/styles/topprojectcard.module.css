@@ -1,0 +1,39 @@
+.imagecontainer {
+  margin: 0px 25px;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}
+
+.imagecontainer img {
+  border: 5px solid gray;
+}
+
+.imagecontainer:nth-child(even) {
+  flex-direction: column-reverse;
+}
+.imagecontainer:nth-child(2)::before {
+  bottom: -10px;
+  top: 100px;
+  width: 240px;
+}
+.imagecontainer:nth-child(3)::before {
+  top: -10px;
+  right: -10px;
+  left: 30px;
+}
+
+.projectnumber {
+  color: rgb(161, 161, 161);
+  text-align: center;
+}
+
+.imagecontainer::before {
+  content: "";
+  width: 200px;
+  height: 200px;
+  position: absolute;
+  border: 2px solid white;
+  top: -10px;
+  left: -10px;
+}

@@ -1,0 +1,76 @@
+.container {
+  /* background-image: url("../assets/bg1.jpg"); */
+  background-size: cover;
+  background-position: center;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background-color: rgb(0 0 0 / 95%);
+  background-blend-mode: darken;
+  letter-spacing: 2px;
+}
+
+.titlecontainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: 20px;
+}
+.heading {
+  font-size: 5vmax;
+  color: #fff;
+  text-align: center;
+  margin: 10px;
+}
+
+.description {
+  font-size: 15px;
+  color: gray;
+  text-align: center;
+}
+
+.span {
+  color: rgb(219 219 219);
+}
+
+.discover {
+  background-color: #f8e867;
+  padding: 10px 30px;
+  border: none;
+  color: #000;
+  letter-spacing: 1px;
+  margin: 20px 0px;
+}
+
+.projects {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+  align-items: center;
+  position: relative;
+}
+
+.projects::before {
+  content: "";
+  position: absolute;
+  width: 100px;
+  height: 100px;
+  top: -50px;
+  left: -25px;
+  border-left: 3px solid gray;
+  border-top: 3px solid gray;
+}
+
+.projects::after {
+  content: "";
+  position: absolute;
+  width: 100px;
+  height: 100px;
+  bottom: 10px;
+  right: -30px;
+  border-bottom: 3px solid gray;
+  border-right: 3px solid gray;
+}
