@@ -3,8 +3,10 @@ import style from "../styles/landingpage.module.css";
 const Landingpage = () => {
   return (
     <div className={style.homepage}>
-      <h5>i am home</h5>
-      <p>welcome home</p>
+      <div className={style.introduction}>Hi There</div>
+      <div className={style.name}>
+        I am Man <span>i</span> sh
+      </div>
     </div>
   );
 };
