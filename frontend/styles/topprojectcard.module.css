@@ -16,7 +16,7 @@
 }
 .imagecontainer:nth-child(2)::before {
   bottom: -10px;
-  top: 100px;
+  top: 130px;
   width: 245px;
 }
 .imagecontainer:nth-child(3)::before {
@@ -30,11 +30,11 @@
   text-align: center;
   z-index: 1;
   position: relative;
-  background-color: rgb(13 13 13);
+  /* background-color: rgb(13 13 13); */
   font-size: 45px;
 }
 
-.projectnumber::before {
+/* .projectnumber::before {
   position: absolute;
   content: "";
   width: 50px;
@@ -45,7 +45,7 @@
   top: 50%;
   left: 39%;
   z-index: -1;
-}
+} */
 
 .imagecontainer::before {
   content: "";

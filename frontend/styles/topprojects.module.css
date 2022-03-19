@@ -1,5 +1,5 @@
 .container {
-  /* background-image: url("../assets/bg1.jpg"); */
+  background-image: url("../assets/bg3.jpg");
   background-size: cover;
   background-position: center;
   width: 100%;
@@ -7,7 +7,7 @@
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  background-color: rgb(0 0 0 / 95%);
+  background-color: rgb(0 0 0 / 0.8);
   background-blend-mode: darken;
   letter-spacing: 2px;
 }
