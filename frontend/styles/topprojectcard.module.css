@@ -5,8 +5,10 @@
   position: relative;
 }
 
-.imagecontainer img {
+.imagediv {
   border: 5px solid gray;
+  z-index: 1;
+  border-radius: 3px;
 }
 
 .imagecontainer:nth-child(even) {
@@ -15,17 +17,34 @@
 .imagecontainer:nth-child(2)::before {
   bottom: -10px;
   top: 100px;
-  width: 240px;
+  width: 245px;
 }
 .imagecontainer:nth-child(3)::before {
   top: -10px;
   right: -10px;
-  left: 30px;
+  left: 35px;
 }
 
 .projectnumber {
   color: rgb(161, 161, 161);
   text-align: center;
+  z-index: 1;
+  position: relative;
+  background-color: rgb(13 13 13);
+  font-size: 45px;
+}
+
+.projectnumber::before {
+  position: absolute;
+  content: "";
+  width: 50px;
+  height: 3px;
+  background-color: white;
+  top: 0;
+  left: 0;
+  top: 50%;
+  left: 39%;
+  z-index: -1;
 }
 
 .imagecontainer::before {
@@ -36,4 +55,5 @@
   border: 2px solid white;
   top: -10px;
   left: -10px;
+  z-index: 0;
 }
