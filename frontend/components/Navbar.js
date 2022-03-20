@@ -21,8 +21,10 @@ const Navbar = () => {
           <Link href="/">
             <a>Work Experience</a>
           </Link>
-          <button className={styles.stylebtn}>Hire me</button>
         </ul>
+      </div>
+      <div className={styles.div3}>
+        <button className={styles.stylebtn}>Hire me</button>
       </div>
     </div>
   );

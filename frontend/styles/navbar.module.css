@@ -3,41 +3,125 @@
 @import url("https://fonts.googleapis.com/css2?family=Stint+Ultra+Condensed&display=swap");
 .navbar {
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
   align-items: center;
-  position: absolute;
+  position: relative;
+  /* background: #000; */
   top: 0;
-  width: 100%;
-  padding: 20px 0px;
+  width: 95%;
+  height: 50px;
+  margin-top: 15px;
+  border: 1px solid #444444;
+  /* clip-path: polygon(0 0, 75% 0, 100% 38%, 100% 100%, 0 100%); */
+  /* border-bottom: 5px solid gray; */
+  /* border-radius: 5px; */
 }
 
+/* .navbar::before {
+  content: "";
+  width: 30px;
+  height: 30px;
+  position: absolute;
+  bottom: -16px;
+  left: -15px;
+  transform: rotate(45deg);
+  border-top: 1px solid #444444;
+  background: #010205;
+} */
+
+.navbar::before {
+  content: "";
+  width: 30px;
+  height: 30px;
+  position: absolute;
+  top: -16px;
+  left: -16px;
+  transform: rotate(45deg);
+  border-right: 1px solid #444444;
+  background: #010205;
+}
+
+/* .navbar::after {
+  content: "";
+  width: 30px;
+  height: 30px;
+  position: absolute;
+  top: -16px;
+  right: -15px;
+  transform: rotate(45deg);
+  border-bottom: 1px solid #444444;
+  background: #010205;
+} */
+
+.navbar::after {
+  content: "";
+  width: 30px;
+  height: 30px;
+  position: absolute;
+  bottom: -16px;
+  right: -16px;
+  transform: rotate(45deg);
+  border-left: 1px solid #444444;
+  background: #010205;
+}
 .navtitle {
   font-family: "Stint Ultra Condensed", cursive;
-  font-size: 2rem;
+  font-size: 25px;
   font-weight: 500;
-  color: #f8e867;
+  /* color: #f8e867; */
+  color: #fff;
+  padding-right: 20px;
+  border-right: 2px solid #444444;
+  margin-left: 30px;
 }
 
 .navlinks ul {
   display: flex;
   color: #fff;
+  flex-direction: row;
+  align-items: center;
 }
 
 .navlinks ul a {
-  margin: 10px 20px;
+  margin: 0px 20px;
+  position: relative;
 }
 
+.navlinks ul a::before {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 0%;
+  height: 2px;
+  background-color: goldenrod;
+  transition: 0.3s;
+}
+
+.navlinks ul a:hover::before {
+  width: 100%;
+  transition: 0.3s;
+}
 .stylebtn {
-  background: #f8e867;
   padding: 10px 30px;
   display: flex;
   border: none;
-  -webkit-clip-path: polygon(0 0, 75% 0, 100% 38%, 100% 100%, 0 100%);
-  clip-path: polygon(0 0, 75% 0, 100% 38%, 100% 100%, 0 100%);
-  border-radius: 5px;
   font-size: 14px;
   font-weight: bold;
   align-items: center;
   justify-content: center;
   position: relative;
+  color: #fff;
+  border-left: 2px solid #444444;
+  background: transparent;
 }
+
+/* .stylebtn::before {
+  content: "";
+  position: absolute;
+  bottom: -10px;
+  left: -10px;
+  width: 100px;
+  height: 100px;
+  background: wheat;
+} */
