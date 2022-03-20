@@ -1,30 +1,151 @@
-.homepage {
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital@1&display=swap");
+
+.maindiv {
+  display: flex;
+  justify-self: center;
+  align-items: center;
+  background-color: #010205c7;
+  background-image: url(../assets/bg3.jpg);
+  background: #fff;
   width: 100%;
   height: 100vh;
-  background-color: yellow;
+  background-position: center;
+  background-size: cover;
+  background-blend-mode: darken;
+  /* color: #0000; */
+}
+
+.homepage {
+  height: 100vh;
+  /* background-color: yellow; */
   display: flex;
   justify-content: center;
-  /* background-image: url("../assets/bg4.jpg"); */
   background-position: center;
   background-size: cover;
   background-color: rgba(0, 0, 0, 0.904);
   background-blend-mode: darken;
   flex-direction: column;
+  /* border: 2px solid #444444; */
+  margin: 20px;
+  width: 95%;
+  position: relative;
+  align-items: flex-start;
 }
 
+/* .homepage::before {
+  content: "";
+  width: 30px;
+  height: 30px;
+  position: absolute;
+  top: -16px;
+  left: -16px;
+  transform: rotate(45deg);
+  border-right: 2px solid #444444;
+  background: #010205;
+}
+
+.homepage::after {
+  content: "";
+  width: 30px;
+  height: 30px;
+  position: absolute;
+  bottom: -16px;
+  right: -16px;
+  transform: rotate(45deg);
+  border-left: 2px solid #444444;
+  background: #010205;
+} */
+
 .introduction {
-  color: #fff;
+  color: darkgoldenrod;
   font-size: 15px;
-  margin: 20px;
+  margin: 0 20px;
+  font-weight: 600;
+  width: 400px;
+  margin-bottom: -40px;
+  margin-left: 50px;
+  letter-spacing: 2px;
+  width: auto;
+  padding: 5px 20px;
+  border-radius: 3px;
 }
 
 .name {
   font-size: 5rem;
-  color: #fff;
-  margin: 20px;
+  color: rgb(255, 255, 255);
+  margin: 0 20px;
+}
+.description {
+  font-size: 12px;
+  width: 400px;
+  text-align: justify;
+  color: rgb(151 151 151);
+  margin-left: 20px;
+  font-family: "Roboto", sans-serif;
+  font-weight: 100;
 }
 
 .name span {
-  color: #f8e867;
+  color: hotpink;
   margin: -15px;
+}
+
+.role {
+  color: darkgoldenrod;
+  margin: 0px 20px;
+  font-weight: 200;
+  width: 400px;
+  text-align: end;
+}
+
+.buttonpair {
+  display: flex;
+}
+
+.explore {
+  padding: 10px 40px;
+  margin: 20px;
+  background-color: transparent;
+  color: rgb(255, 255, 255);
+  border: 1px solid #444444;
+  position: relative;
+  transition: 0.3s;
+}
+
+.explore::before {
+  content: "";
+  width: 20px;
+  height: 20px;
+  position: absolute;
+  bottom: -11px;
+  left: -11px;
+  transform: rotate(45deg);
+  border-top: 1px solid #444444;
+  background: #010205;
+}
+
+.explore::after {
+  content: "";
+  width: 20px;
+  height: 20px;
+  position: absolute;
+  top: -11px;
+  right: -11px;
+  transform: rotate(45deg);
+  border-bottom: 1px solid #444444;
+  background: #010205;
+}
+
+.explore:hover {
+  box-shadow: 4px 4px 0px 0px darkgoldenrod;
+  -webkit-box-shadow: 4px 4px 0px 0px darkgoldenrod;
+  -moz-box-shadow: 4px 4px 0px 0px darkgoldenrod;
+  transition: 0.3s;
+}
+
+.explore:hover::before,
+.explore:hover::after {
+  width: 0;
+  height: 0;
+  transition: 0.3s;
 }
