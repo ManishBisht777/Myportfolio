@@ -22,6 +22,7 @@ const AllProjects = () => {
   return (
     <div className={Style.allprojectbx}>
       <Swiper
+        effect={"cards"}
         grabCursor={true}
         centeredSlides={true}
         slidesPerView={"auto"}
