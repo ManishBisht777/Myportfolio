@@ -3,6 +3,7 @@ import Navbar from "../components/Navbar";
 import TopProjects from "../components/TopProjects";
 import styles from "../styles/Home.module.css";
 import Landingpage from "../components/Landingpage";
+import AllProjects from "../components/AllProjects";
 
 export default function Home() {
   return (
@@ -16,6 +17,7 @@ export default function Home() {
         <Navbar />
         <Landingpage />
         <TopProjects />
+        <AllProjects />
       </main>
     </div>
   );
