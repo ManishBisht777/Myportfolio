@@ -8,10 +8,12 @@ import style from "../styles/hostedproject.module.css";
 const Hostedprojectcard = () => {
   return (
     <div className={style.projectcard}>
-      <Image src={p1} height={200} width={180} className={style.projectimg} />
+      <div className={style.projectimg}>
+        <Image src={p1} height={200} width={180} objectFit={"cover"} />
+      </div>
       <div className={style.projectdetail}>
-        <p className={style.projectname}># Project Name</p>
-        <p>GitHub Link</p>
+        <p className={style.projectname}>Project Name</p>
+        <p className={style.projectname}>GitHub Link</p>
         <button className={style.view}>View Deployement</button>
       </div>
     </div>

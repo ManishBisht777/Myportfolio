@@ -13,18 +13,27 @@ import Hostedprojectcard from "./Hostedprojectcard";
 const AllProjects = () => {
   return (
     <div>
-      <div className="">
+      <div className={Style.allprojectbx}>
         <h2>All Projects</h2>
-        <div className="">
+        <div className={Style.sliderdiv}>
           <h3>Hosted Projects</h3>
-          <div className="">
+          <div className={Style.projectbx}>
             {/* setup slider later */}
+            <Hostedprojectcard />
+            <Hostedprojectcard />
             <Hostedprojectcard />
           </div>
         </div>
         <div className="">
-          <h3>Non Hosted and UI based Projects</h3>
-          <div className=""></div>
+          <div className={Style.sliderdiv}>
+            <h3>Non Hosted and UI based Projects</h3>
+            <div className={Style.projectbx}>
+              {/* setup slider later */}
+              <Hostedprojectcard />
+              <Hostedprojectcard />
+              <Hostedprojectcard />
+            </div>
+          </div>
         </div>
       </div>
     </div>

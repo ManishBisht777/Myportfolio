@@ -5,32 +5,62 @@
   position: relative;
   flex-direction: column;
   color: #fff;
-  padding-top: 10px;
-  border: 2px solid white;
-  height: 300px;
-  width: 200px;
+  padding: 10px;
+  border: 2px solid #3c3c3c;
+  margin: 10px;
+}
+
+.projectcard::after {
+  position: absolute;
+  content: "02";
+  top: -40px;
+  font-size: 2rem;
+  color: #f8e867;
+  padding: 0px 30px;
+  background: #010205;
 }
 
 .projectimg {
   width: 180px;
   height: 200px;
-  border: 5px solid white;
+  border: 10px solid gray;
+  position: relative;
 }
 
 .projectdetail {
   display: flex;
   flex-direction: column;
   align-items: center;
+  width: 100%;
 }
 
 .projectname {
   color: gray;
+  width: 100%;
+  position: relative;
+  display: none;
+  transition: 0.5;
+}
+
+.projectcard:hover .projectname {
+  display: flex;
+  transition: 0.5;
+}
+.projectname::after {
+  position: absolute;
+  content: "-----";
+  top: 0;
+  right: 0;
+  width: 20%;
+  height: 100%;
 }
 
 .view {
-  background: yellow;
+  background: #f8e867;
   padding: 10px 30px;
   border: none;
   position: absolute;
-  bottom: -20px;
+  bottom: -30px;
+  font-family: "Oswald", sans-serif;
+  border: 10px solid #010205;
 }
