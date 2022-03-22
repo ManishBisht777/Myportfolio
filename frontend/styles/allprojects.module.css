@@ -1,7 +1,6 @@
 .allprojectbx {
   width: 100%;
   overflow-x: hidden;
-  background: white;
   position: relative;
   display: flex;
   justify-content: center;
@@ -9,27 +8,54 @@
   color: #000;
   overflow-x: hidden;
   flex-direction: column;
+  /* background-color: #010205; */
+  background-color: rgb(0 0 0 / 0.69);
+  color: #fff;
+  background-image: url("../assets/bg7.jpg");
+  background-size: cover;
+  background-position: center;
+  background-blend-mode: darken;
+}
+
+.allprojectbx h2 {
+  font-size: 5vmax;
+}
+
+.allprojectbx h3 {
+  margin-left: 20px;
+  position: relative;
+}
+
+.allprojectbx h3::before {
+  content: "Projects";
+  position: absolute;
+  top: -60px;
+  color: rgb(255 255 255 / 30%);
+  font-size: 8vmax;
 }
 
 .projectbx {
   display: flex;
   justify-content: center;
   align-items: center;
+  margin: 35px 0px;
+  z-index: 1;
 }
 
-.projectbx:nth-child(1)::after {
+/* .projectbx:nth-child(1)::after {
   content: "01";
 }
 
 .projectbx:nth-child(3)::after {
   content: "03";
-}
+} */
 
 .sliderdiv {
   display: flex;
   width: 100%;
   margin: 20px;
   flex-direction: column;
+  position: relative;
 }
 
 /* .swiper {
@@ -46,3 +72,41 @@
   background: white;
   color: #000;
 } */
+
+.stylediv {
+  width: 130%;
+  position: absolute;
+  left: -100px;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #2b2038;
+  display: flex;
+  color: #b5b5b5;
+  margin: 20px 0;
+  z-index: 0;
+  top: 150px;
+  transform: rotate(9deg);
+}
+
+.stylediv span {
+  width: 200px;
+}
+
+.stylediv2 {
+  width: 130%;
+  position: absolute;
+  left: -100px;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #2b2038;
+  display: flex;
+  color: #b5b5b5;
+  margin: 20px 0;
+  z-index: 0;
+  top: 150px;
+  transform: rotate(354deg);
+}

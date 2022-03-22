@@ -12,28 +12,40 @@ import Hostedprojectcard from "./Hostedprojectcard";
 
 const AllProjects = () => {
   return (
-    <div>
-      <div className={Style.allprojectbx}>
-        <h2>All Projects</h2>
-        <div className={Style.sliderdiv}>
-          <h3>Hosted Projects</h3>
-          <div className={Style.projectbx}>
-            {/* setup slider later */}
-            <Hostedprojectcard />
-            <Hostedprojectcard />
-            <Hostedprojectcard />
-          </div>
+    <div className={Style.allprojectbx}>
+      <h2>All Projects</h2>
+      <div className={Style.sliderdiv}>
+        <h3>Hosted Projects</h3>
+        <div className={Style.stylediv}>
+          <span>Hosted Projects</span>
+          <span>Hosted Projects</span>
+          <span>Hosted Projects</span>
+          <span>Hosted Projects</span>
+          <span>Hosted Projects</span>
+          <span>Hosted Projects</span>
+          <span>Hosted Projects</span>
         </div>
-        <div className="">
-          <div className={Style.sliderdiv}>
-            <h3>Non Hosted and UI based Projects</h3>
-            <div className={Style.projectbx}>
-              {/* setup slider later */}
-              <Hostedprojectcard />
-              <Hostedprojectcard />
-              <Hostedprojectcard />
-            </div>
-          </div>
+        <div className={Style.projectbx}>
+          <Hostedprojectcard />
+          <Hostedprojectcard />
+          <Hostedprojectcard />
+        </div>
+        <div className={Style.stylediv2}>
+          <span>Hosted Projects</span>
+          <span>Hosted Projects</span>
+          <span>Hosted Projects</span>
+          <span>Hosted Projects</span>
+          <span>Hosted Projects</span>
+          <span>Hosted Projects</span>
+          <span>Hosted Projects</span>
+        </div>
+      </div>
+      <div className={Style.sliderdiv}>
+        <h3>Non Hosted and UI based Projects</h3>
+        <div className={Style.projectbx}>
+          <Hostedprojectcard />
+          <Hostedprojectcard />
+          <Hostedprojectcard />
         </div>
       </div>
     </div>
