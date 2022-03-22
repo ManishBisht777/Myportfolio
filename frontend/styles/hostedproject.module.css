@@ -1,0 +1,36 @@
+.projectcard {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  flex-direction: column;
+  color: #fff;
+  padding-top: 10px;
+  border: 2px solid white;
+  height: 300px;
+  width: 200px;
+}
+
+.projectimg {
+  width: 180px;
+  height: 200px;
+  border: 5px solid white;
+}
+
+.projectdetail {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.projectname {
+  color: gray;
+}
+
+.view {
+  background: yellow;
+  padding: 10px 30px;
+  border: none;
+  position: absolute;
+  bottom: -20px;
+}

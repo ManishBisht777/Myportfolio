@@ -1,43 +1,32 @@
 import React from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
+import { EffectCoverflow, Pagination, Navigation } from "swiper";
 
-// Import Swiper styles
 import "swiper/css";
+import "swiper/css/effect-coverflow";
 import "swiper/css/pagination";
 import "swiper/css/navigation";
 
-// import Image from "next/image";
-
-import "swiper/css/effect-cards";
-
-import { EffectCards } from "swiper";
-
-import { Pagination, Navigation } from "swiper";
-
 import Style from "../styles/allprojects.module.css";
-
-// import p1 from "../assets/bg7.jpg";
+import Hostedprojectcard from "./Hostedprojectcard";
 
 const AllProjects = () => {
   return (
-    <div className={Style.allprojectbx}>
-      <Swiper
-        effect={"cards"}
-        grabCursor={true}
-        centeredSlides={true}
-        slidesPerView={"auto"}
-        navigation={true}
-        pagination={true}
-        modules={[EffectCards, Pagination, Navigation]}
-        // className="mySwiper"
-        className={Style.swiper}
-      >
-        <SwiperSlide className={Style.swiper_slide}>hello</SwiperSlide>
-        <SwiperSlide className={Style.swiper_slide}>hello</SwiperSlide>
-        <SwiperSlide className={Style.swiper_slide}>hello</SwiperSlide>
-        <SwiperSlide className={Style.swiper_slide}>hello</SwiperSlide>
-        <SwiperSlide className={Style.swiper_slide}>hello</SwiperSlide>
-      </Swiper>
+    <div>
+      <div className="">
+        <h2>All Projects</h2>
+        <div className="">
+          <h3>Hosted Projects</h3>
+          <div className="">
+            {/* setup slider later */}
+            <Hostedprojectcard />
+          </div>
+        </div>
+        <div className="">
+          <h3>Non Hosted and UI based Projects</h3>
+          <div className=""></div>
+        </div>
+      </div>
     </div>
   );
 };
