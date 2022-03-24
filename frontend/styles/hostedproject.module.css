@@ -8,18 +8,30 @@
   padding: 10px;
   border: 2px solid #3c3c3c;
   margin: 10px;
+  position: relative;
 }
 
 .projectcard::after {
+  content: "";
   position: absolute;
-  content: "02";
-  top: -40px;
-  font-size: 2rem;
-  color: #f8e867;
-  padding: 0px 30px;
-  background: #010205;
+  width: 150px;
+  height: 150px;
+  bottom: -15px;
+  left: -15px;
+  z-index: 0;
+  border-left: 5px solid white;
+  border-bottom: 5px solid white;
 }
 
+.projectcard::before {
+  content: "";
+  position: absolute;
+  width: 150px;
+  height: 150px;
+  top: -15px;
+  right: -15px;
+  border: 5px solid white;
+}
 .projectimg {
   width: 180px;
   height: 200px;
@@ -61,6 +73,7 @@
   border: none;
   position: absolute;
   bottom: -30px;
+  clip-path: polygon(0 0, 85% 0, 100% 41%, 100% 100%, 15% 100%, 0 100%);
   font-family: "Oswald", sans-serif;
-  border: 10px solid #010205;
+  z-index: 1;
 }

@@ -1,7 +1,7 @@
 import React from "react";
 import Image from "next/image";
 
-import p1 from "../assets/profile.png";
+import p1 from "../assets/5.png";
 
 import style from "../styles/hostedproject.module.css";
 

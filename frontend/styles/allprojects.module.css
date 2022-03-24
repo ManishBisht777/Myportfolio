@@ -19,19 +19,52 @@
 
 .allprojectbx h2 {
   font-size: 5vmax;
+  position: relative;
+}
+
+.allprojectbx h2::before {
+  content: "Projects";
+  position: absolute;
+  top: -40px;
+  color: rgb(255 255 255 / 15%);
+  font-size: 10vmax;
+  left: -40px;
 }
 
 .allprojectbx h3 {
   margin-left: 20px;
   position: relative;
+  padding: 10px 30px;
+  border: 1px solid #444444;
+  width: fit-content;
+  position: relative;
+  font-size: 15px;
+  font-weight: 100;
+  color: #b5b5b5;
 }
 
 .allprojectbx h3::before {
-  content: "Projects";
+  content: "";
+  width: 20px;
+  height: 20px;
   position: absolute;
-  top: -60px;
-  color: rgb(255 255 255 / 30%);
-  font-size: 8vmax;
+  top: -11px;
+  right: -11px;
+  transform: rotate(45deg);
+  border-bottom: 1px solid #444444;
+  background: #010205;
+}
+
+.allprojectbx h3::after {
+  content: "";
+  width: 20px;
+  height: 20px;
+  position: absolute;
+  bottom: -11px;
+  left: -11px;
+  transform: rotate(45deg);
+  border-top: 1px solid #444444;
+  background: #010205;
 }
 
 .projectbx {
@@ -53,14 +86,12 @@
 .sliderdiv {
   display: flex;
   width: 100%;
-  margin: 20px;
   flex-direction: column;
   position: relative;
 }
 
-/* .swiper {
+.swiper {
   width: 100%;
-  padding-top: 50px;
   padding-bottom: 50px;
 }
 
@@ -68,10 +99,60 @@
   background-position: center;
   background-size: cover;
   width: 300px;
-  height: 300px;
-  background: white;
-  color: #000;
-} */
+  height: 400px;
+  display: flex;
+  align-items: center;
+}
+
+.swiper2 {
+  width: 240px;
+  height: 320px;
+}
+.swiper_slide_2 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 18px;
+  font-size: 22px;
+  font-weight: bold;
+  color: #fff;
+}
+
+.swiper_slide_2:nth-child(1n) {
+  background-color: rgb(206, 17, 17);
+}
+
+.swiper_slide_2:nth-child(2n) {
+  background-color: rgb(0, 140, 255);
+}
+
+.swiper_slide_2:nth-child(3n) {
+  background-color: rgb(10, 184, 111);
+}
+
+.swiper_slide_2:nth-child(4n) {
+  background-color: rgb(211, 122, 7);
+}
+
+.swiper_slide_2:nth-child(5n) {
+  background-color: rgb(118, 163, 12);
+}
+
+.swiper_slide_2:nth-child(6n) {
+  background-color: rgb(180, 10, 47);
+}
+
+.swiper_slide_2:nth-child(7n) {
+  background-color: rgb(35, 99, 19);
+}
+
+.swiper_slide_2:nth-child(8n) {
+  background-color: rgb(0, 68, 255);
+}
+
+.swiper_slide_2:nth-child(9n) {
+  background-color: rgb(218, 12, 218);
+}
 
 .stylediv {
   width: 130%;
