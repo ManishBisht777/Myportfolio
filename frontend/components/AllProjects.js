@@ -17,6 +17,10 @@ import "swiper/css/navigation";
 import Style from "../styles/allprojects.module.css";
 import Hostedprojectcard from "./Hostedprojectcard";
 
+import p1 from "../assets/5.png";
+
+import Image from "next/image";
+
 const AllProjects = () => {
   return (
     <div className={Style.allprojectbx}>
@@ -99,7 +103,19 @@ const AllProjects = () => {
             className={Style.swiper2}
           >
             <SwiperSlide className={Style.swiper_slide_2}>
-              <Hostedprojectcard />
+              <Image src={p1} height={300} width={220} />
+            </SwiperSlide>
+            <SwiperSlide className={Style.swiper_slide_2}>
+              <Image src={p1} height={300} width={220} />
+            </SwiperSlide>
+            <SwiperSlide className={Style.swiper_slide_2}>
+              <Image src={p1} height={300} width={220} />
+            </SwiperSlide>
+            <SwiperSlide className={Style.swiper_slide_2}>
+              <Image src={p1} height={300} width={220} />
+            </SwiperSlide>
+            <SwiperSlide className={Style.swiper_slide_2}>
+              <Image src={p1} height={300} width={220} />
             </SwiperSlide>
           </Swiper>
         </div>
