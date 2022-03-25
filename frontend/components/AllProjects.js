@@ -1,18 +1,12 @@
 import React from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
-import {
-  EffectCoverflow,
-  Pagination,
-  Navigation,
-  Autoplay,
-  EffectCards,
-} from "swiper";
+import { Pagination, Autoplay, EffectCards } from "swiper";
+
+// nested vertical slider - slider 1 in slider and image gallery at 2nd slide
 
 import "swiper/css";
-import "swiper/css/effect-coverflow";
 import "swiper/css/effect-cards";
 import "swiper/css/pagination";
-import "swiper/css/navigation";
 
 import Style from "../styles/allprojects.module.css";
 import Hostedprojectcard from "./Hostedprojectcard";
@@ -27,28 +21,20 @@ const AllProjects = () => {
       <h2>All Projects</h2>
       <div className={Style.sliderdiv}>
         <h3>Hosted Projects</h3>
-        {/* <div className={Style.stylediv}>
-          <span>Hosted Projects</span>
-          <span>Hosted Projects</span>
-          <span>Hosted Projects</span>
-          <span>Hosted Projects</span>
-          <span>Hosted Projects</span>
-          <span>Hosted Projects</span>
-          <span>Hosted Projects</span>
-        </div> */}
+
         <div className={Style.projectbx}>
           <Swiper
             effect={"coverflow"}
             grabCursor={true}
-            centeredSlides={true}
             slidesPerView={"auto"}
-            coverflowEffect={{
-              rotate: 50,
-              stretch: 0,
-              depth: 100,
-              modifier: 1,
-              slideShadows: true,
-            }}
+            centeredSlides={true}
+            // coverflowEffect={{
+            //   rotate: 50,
+            //   stretch: 0,
+            //   depth: 100,
+            //   modifier: 1,
+            //   slideShadows: true,
+            // }}
             autoplay={{
               delay: 2500,
               disableOnInteraction: false,
@@ -56,8 +42,7 @@ const AllProjects = () => {
             pagination={{
               clickable: true,
             }}
-            navigation={true}
-            modules={[EffectCoverflow, Pagination, Navigation, Autoplay]}
+            modules={[Pagination, Autoplay]}
             className={Style.swiper}
           >
             <SwiperSlide className={Style.swiper_slide}>
@@ -83,15 +68,6 @@ const AllProjects = () => {
             </SwiperSlide>
           </Swiper>
         </div>
-        {/* <div className={Style.stylediv2}>
-          <span>Hosted Projects</span>
-          <span>Hosted Projects</span>
-          <span>Hosted Projects</span>
-          <span>Hosted Projects</span>
-          <span>Hosted Projects</span>
-          <span>Hosted Projects</span>
-          <span>Hosted Projects</span>
-        </div> */}
       </div>
       <div className={Style.sliderdiv}>
         <h3>Non Hosted and UI based Projects</h3>

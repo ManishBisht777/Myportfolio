@@ -4,6 +4,7 @@ import TopProjects from "../components/TopProjects";
 import styles from "../styles/Home.module.css";
 import Landingpage from "../components/Landingpage";
 import AllProjects from "../components/AllProjects";
+import Hostedprojectcard from "../components/Hostedprojectcard";
 
 export default function Home() {
   return (

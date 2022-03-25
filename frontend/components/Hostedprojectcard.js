@@ -9,7 +9,7 @@ const Hostedprojectcard = () => {
   return (
     <div className={style.projectcard}>
       <div className={style.projectimg}>
-        <Image src={p1} height={200} width={180} objectFit={"cover"} />
+        <Image src={p1} />
       </div>
       <div className={style.projectdetail}>
         <p className={style.projectname}>Project Name</p>
