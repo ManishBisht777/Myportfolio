@@ -7,8 +7,8 @@ import style from "../styles/hostedproject.module.css";
 
 const Hostedprojectcard = () => {
   return (
-    <div className={style.projectcard}>
-      <div className={style.projectimg}>
+    <div data-swiper-parallax="300" className={style.projectcard}>
+      <div data-swiper-parallax="300" className={style.projectimg}>
         <Image src={p1} />
       </div>
       <div className={style.projectdetail}>

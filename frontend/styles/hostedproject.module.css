@@ -6,15 +6,11 @@
   flex-direction: column;
   color: #fff;
   padding: 10px;
-  border: 2px solid #3c3c3c;
   margin: 10px;
   position: relative;
-  border-radius: 5px;
 }
 
 .projectimg {
-  width: 220px;
-  height: 180px;
   position: relative;
   background: rebeccapurple;
   border-radius: 5px;
@@ -22,7 +18,7 @@
 }
 
 .projectdetail {
-  display: flex;
+  display: none;
   flex-direction: column;
   width: 100%;
 }
