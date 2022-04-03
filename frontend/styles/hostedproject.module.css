@@ -8,6 +8,13 @@
   padding: 10px;
   margin: 10px;
   position: relative;
+  width: 250px;
+  height: 300px;
+  backdrop-filter: blur(25px) saturate(0%);
+  -webkit-backdrop-filter: blur(25px) saturate(0%);
+  background-color: rgba(17, 25, 40, 0.85);
+  border-radius: 12px;
+  border: 1px solid rgba(255, 255, 255, 0.125);
 }
 
 .projectimg {
@@ -18,7 +25,7 @@
 }
 
 .projectdetail {
-  display: none;
+  display: flex;
   flex-direction: column;
   width: 100%;
 }

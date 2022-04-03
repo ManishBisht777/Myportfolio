@@ -5,6 +5,7 @@ import styles from "../styles/Home.module.css";
 import Landingpage from "../components/Landingpage";
 import AllProjects from "../components/AllProjects";
 import Hostedprojectcard from "../components/Hostedprojectcard";
+import Skills from "../components/Skills";
 
 export default function Home() {
   return (
@@ -18,7 +19,8 @@ export default function Home() {
         <Navbar />
         <Landingpage />
         <TopProjects />
-        <AllProjects />
+        {/* <Hostedprojectcard /> */}
+        <Skills />
       </main>
     </div>
   );
