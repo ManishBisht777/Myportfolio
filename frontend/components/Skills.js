@@ -11,6 +11,7 @@ const Skills = () => {
         <div className={style.right}></div>
         <div className={style.back}></div>
       </div> */}
+      <h3>Skills</h3>
       <motion.div className={style.skills}>
         <motion.div className={style.skill}>Html</motion.div>
         <motion.div className={style.skill}>Css</motion.div>

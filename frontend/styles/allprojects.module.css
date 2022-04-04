@@ -31,66 +31,9 @@
   left: -40px;
 }
 
-.allprojectbx h3 {
-  margin-left: 20px;
-  position: relative;
-  padding: 10px 30px;
-  border: 1px solid #444444;
-  width: fit-content;
-  position: relative;
-  font-size: 15px;
-  font-weight: 100;
-  color: #b5b5b5;
-}
-
-.allprojectbx h3::before {
-  content: "";
-  width: 20px;
-  height: 20px;
-  position: absolute;
-  top: -11px;
-  right: -11px;
-  transform: rotate(45deg);
-  border-bottom: 1px solid #444444;
-  background: #010205;
-}
-
-.allprojectbx h3::after {
-  content: "";
-  width: 20px;
-  height: 20px;
-  position: absolute;
-  bottom: -11px;
-  left: -11px;
-  transform: rotate(45deg);
-  border-top: 1px solid #444444;
-  background: #010205;
-}
-
-.projectbx {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin: 35px 0px;
-  z-index: 1;
-}
-
 .sliderdiv {
-  width: 100%;
-  height: 100vh;
-}
-.swiper {
-  width: 100%;
-  height: 100%;
   display: flex;
-  justify-content: center;
-  align-items: center;
-}
-.swiper_slide {
-  text-align: center;
-  font-size: 18px;
-  background: rgba(33, 22, 43, 0.801);
-  display: flex;
+  flex-wrap: wrap;
   justify-content: center;
   align-items: center;
 }

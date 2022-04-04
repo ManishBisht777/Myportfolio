@@ -1,59 +1,124 @@
-.projectcard {
+.projectcard
+{
+  background: white;
   display: flex;
   justify-content: center;
   align-items: center;
   position: relative;
   flex-direction: column;
-  color: #fff;
-  padding: 10px;
-  margin: 10px;
-  position: relative;
+  transition: 0.3s;
+cursor: pointer;
+border-radius: 5px;
+overflow: hidden;
+margin: 10px;
+border: 3px solid rgba(32, 32, 32, 0.66);
+}
+
+.projectimg
+{
   width: 250px;
   height: 300px;
-  backdrop-filter: blur(25px) saturate(0%);
-  -webkit-backdrop-filter: blur(25px) saturate(0%);
-  background-color: rgba(17, 25, 40, 0.85);
-  border-radius: 12px;
-  border: 1px solid rgba(255, 255, 255, 0.125);
-}
-
-.projectimg {
   position: relative;
-  background: rebeccapurple;
-  border-radius: 5px;
-  overflow: hidden;
+}
+.projectimg::after
+{
+  content: '';
+  position: absolute;
+  background: rgba(0, 0, 0, 0);
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
 }
 
-.projectdetail {
+.projectdesc
+{
   display: flex;
   flex-direction: column;
-  width: 100%;
-}
-
-.projectname {
-  color: gray;
-  position: relative;
-  display: flex;
-  transition: 0.5;
-  margin: 5px;
-  width: 100%;
-}
-
-/* .projectname::after {
+  justify-content:center;
+  align-items: center;
   position: absolute;
-  content: "-----";
   top: 0;
-  right: 0;
-  width: 20%;
+  left: 0;
+  width: 100%;
   height: 100%;
-} */
+  color: #acacac;
+  display: none;
+}
+.projectcard:hover{
+  transform: translateY(-10px);
+}
+.projectcard:hover .projectimg::after
+{
+  background: rgba(0, 0, 0, 0.78);
+  transition: 0.3s;
+}
 
-.view {
-  background: #f8e867;
-  padding: 8px 20px;
-  border: none;
-  font-family: "Oswald", sans-serif;
-  z-index: 1;
-  border-radius: 5px;
-  width: 150px;
+.projectcard:hover .projectdesc
+{
+  display: flex;
+}
+.projectdesc h4
+{
+  font-size: 3vmax;
+  border-bottom: 2px solid #fff;
+  margin: 5px;
+  color: #a22b2b;
+}
+
+.projectdesc p{
+margin: 10px;
+font-size: 12px;
+text-align: justify;
+}
+
+
+.buttons button
+{
+  padding: 10px 20px;
+margin: 10px;
+  background-color: transparent;
+  color: rgba(255, 255, 255, 0.589);
+  border: 1px solid #444444;
+  position: relative;
+  transition: 0.3s;
+  cursor: pointer;
+}
+
+.buttons button::before {
+  content: "";
+  width: 20px;
+  height: 20px;
+  position: absolute;
+  bottom: -11px;
+  left: -11px;
+  transform: rotate(45deg);
+  border-top: 1px solid #444444;
+  background: rgba(0, 0, 0, 0.78);
+}
+
+.buttons button::after {
+  content: "";
+  width: 20px;
+  height: 20px;
+  position: absolute;
+  top: -11px;
+  right: -11px;
+  transform: rotate(45deg);
+  border-bottom: 1px solid #444444;
+  background: rgba(0, 0, 0, 0.78);
+}
+
+.buttons button:hover {
+  box-shadow: 4px 4px 0px 0px #a63838;
+  -webkit-box-shadow: 4px 4px 0px 0px #a63838;
+  -moz-box-shadow: 4px 4px 0px 0px #a63838;
+  transition: 0.3s;
+}
+
+.buttons button:hover::before,
+.buttons button:hover::after {
+  width: 0;
+  height: 0;
+  transition: 0.3s;
 }

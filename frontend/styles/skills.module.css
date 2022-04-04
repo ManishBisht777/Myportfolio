@@ -12,8 +12,14 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  flex-direction: column;
+  color: #fff;
 }
-  
+
+.skillbox h3{
+  font-size: 5vmax;
+  letter-spacing: 1px;
+}
 .container
 {
   width: 150px;

@@ -25,46 +25,10 @@ const AllProjects = () => {
     <div className={Style.allprojectbx}>
       <h2>All Projects</h2>
       <div className={Style.sliderdiv}>
-        <Swiper
-          spaceBetween={50}
-          pagination={{
-            clickable: true,
-          }}
-          direction={"vertical"}
-          modules={[Pagination]}
-          centeredSlides={true}
-          className={Style.swiper}
-        >
-          <SwiperSlide className={Style.swiper_slide}>
-            <Swiper
-              spaceBetween={50}
-              pagination={{
-                clickable: true,
-              }}
-              modules={[Pagination]}
-              className={Style.swiper}
-            >
-              <SwiperSlide className={Style.swiper_slide}>
-                <Image src={p1}></Image>
-              </SwiperSlide>
-              <SwiperSlide className={Style.swiper_slide}>
-                <Image src={p2}></Image>
-              </SwiperSlide>
-              <SwiperSlide className={Style.swiper_slide}>
-                <Image src={p3}></Image>
-              </SwiperSlide>
-            </Swiper>
-          </SwiperSlide>
-          <SwiperSlide className={Style.swiper_slide}>
-            <Image src={p4}></Image>
-          </SwiperSlide>
-          <SwiperSlide className={Style.swiper_slide}>
-            <Image src={p5}></Image>
-          </SwiperSlide>
-          <SwiperSlide className={Style.swiper_slide}>
-            <Image src={p6}></Image>
-          </SwiperSlide>
-        </Swiper>
+        <Hostedprojectcard />
+        <Hostedprojectcard />
+        <Hostedprojectcard />
+        <Hostedprojectcard />
       </div>
     </div>
   );
