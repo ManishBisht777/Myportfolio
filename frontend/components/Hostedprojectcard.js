@@ -16,7 +16,9 @@ const Hostedprojectcard = () => {
         <p>
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia vel
           atque accusantium sequi doloribus corporis aperiam voluptas tenetur
-          quisquam earum?
+          quisquam earum? Lorem ipsum dolor sit amet consectetur adipisicing
+          elit. Quia vel atque accusantium sequi doloribus corporis aperiam
+          voluptas tenetur quisquam earum?
         </p>
         <div className={style.buttons}>
           <button>Live Link</button>

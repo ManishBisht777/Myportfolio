@@ -1,34 +1,51 @@
 import React from "react";
 
 // nested vertical slider - slider 1 in slider and image gallery at 2nd slide
-import { Swiper, SwiperSlide } from "swiper/react";
-import { Pagination } from "swiper";
+import { Navigation, Autoplay } from "swiper";
 
 import "swiper/css";
 import "swiper/css/effect-cards";
 import "swiper/css/pagination";
+import { Swiper, SwiperSlide } from "swiper/react";
 
 import Style from "../styles/allprojects.module.css";
 import Hostedprojectcard from "./Hostedprojectcard";
-
-import p1 from "../assets/1.png";
-import p2 from "../assets/2.png";
-import p3 from "../assets/5.png";
-import p4 from "../assets/bg4.jpg";
-import p5 from "../assets/bg5.jpg";
-import p6 from "../assets/bg7.jpg";
-
-import Image from "next/image";
 
 const AllProjects = () => {
   return (
     <div className={Style.allprojectbx}>
       <h2>All Projects</h2>
       <div className={Style.sliderdiv}>
-        <Hostedprojectcard />
-        <Hostedprojectcard />
-        <Hostedprojectcard />
-        <Hostedprojectcard />
+        <Swiper
+          slidesPerView={window.innerWidth > 750 ? 4 : 3}
+          spaceBetween={10}
+          slidesPerGroup={4}
+          loop={true}
+          centeredSlides={true}
+          autoplay={{
+            delay: 2500,
+            disableOnInteraction: false,
+          }}
+          navigation={true}
+          modules={[Navigation, Autoplay]}
+          // className="mySwiper"
+        >
+          <SwiperSlide className={Style.swiperslide}>
+            <Hostedprojectcard />
+          </SwiperSlide>
+          <SwiperSlide>
+            <Hostedprojectcard />
+          </SwiperSlide>
+          <SwiperSlide>
+            <Hostedprojectcard />
+          </SwiperSlide>
+          <SwiperSlide>
+            <Hostedprojectcard />
+          </SwiperSlide>
+          <SwiperSlide>
+            <Hostedprojectcard />
+          </SwiperSlide>
+        </Swiper>
       </div>
     </div>
   );

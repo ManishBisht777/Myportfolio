@@ -9,12 +9,13 @@
   overflow-x: hidden;
   flex-direction: column;
   /* background-color: #010205; */
-  background-color: rgb(0 0 0 / 0.69);
+  background-color: rgba(0, 0, 0, 0.904);
   color: #fff;
   background-image: url("../assets/bg7.jpg");
   background-size: cover;
   background-position: center;
   background-blend-mode: darken;
+  padding: 40px 0px;
 }
 
 .allprojectbx h2 {
@@ -32,8 +33,11 @@
 }
 
 .sliderdiv {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  align-items: center;
+  width: 100%;
+  height: 100%;
+}
+
+.swiperslide
+{
+  width: 250px;
 }
