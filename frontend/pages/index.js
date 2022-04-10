@@ -6,6 +6,7 @@ import Landingpage from "../components/Landingpage";
 import AllProjects from "../components/AllProjects";
 import Hostedprojectcard from "../components/Hostedprojectcard";
 import Skills from "../components/Skills";
+import TimeLine from "../components/TimeLine";
 
 export default function Home() {
   return (
@@ -19,6 +20,7 @@ export default function Home() {
         <Navbar />
         <Landingpage />
         <TopProjects />
+        <TimeLine timelines={[1, 2, 3, 4]} />
         <AllProjects />
         <Skills />
       </main>
