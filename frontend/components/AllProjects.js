@@ -17,9 +17,8 @@ const AllProjects = () => {
       <h2>All Projects</h2>
       <div className={Style.sliderdiv}>
         <Swiper
-          slidesPerView={window.innerWidth > 750 ? 4 : 3}
+          slidesPerView={4}
           spaceBetween={10}
-          slidesPerGroup={4}
           loop={true}
           centeredSlides={true}
           autoplay={{

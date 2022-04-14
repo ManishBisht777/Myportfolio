@@ -4,10 +4,10 @@
 {
   width: 100%;
   height: 100vh;
-  background-image: url("../assets/skillbg.jpg");
+  /* background-image: url("../assets/skillbg.jpg"); */
   background-position: center;
   background-size: cover;
-  background-color: #070410b0;
+  background-color: #070410;
   background-blend-mode: darken;
   display: flex;
   justify-content: center;
@@ -27,98 +27,6 @@
   animation: rotation 15s linear infinite alternate;
   transform-style: preserve-3d;
 }
-
-/* .left
-{
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  box-shadow: 0 0 10px rgb(0, 0, 0);
-  position: absolute;
-  width: inherit;
-  height: inherit;
-  clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
-  opacity: 0.7;
-  background: yellow;
-  transform: translate3d(0, 0, 100px);
-}
-
-.right
-{
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  box-shadow: 0 0 10px rgb(0, 0, 0);
-  position: absolute;
-  width: inherit;
-  height: inherit;
-  clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
-  opacity: 0.7;
-  background: red;
-  transform: rotateY(180deg) translate3d(0, 0, 150px);
-}
-
-.front
-{
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  box-shadow: 0 0 10px rgb(0, 0, 0);
-  position: absolute;
-  width: inherit;
-  clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
-  height: inherit;
-  background: blue;
-  opacity: 0.7;
-  transform: rotateY(-90deg) translate3d(0, 0, 150px);
-}
-
-.back
-{
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  box-shadow: 0 0 10px rgb(0, 0, 0);
-  position: absolute;
-  clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
-  width: inherit;
-  height: inherit;
-  background: green;
-  opacity: 0.7;
-  transform: rotateY(90deg) translate3d(0, 0, 150px);
-}
-
-@keyframes rotation {
-  to {
-    transform: rotateY(360deg)  ;
-  }
-}
-
-@keyframes cubeShadow {
-  to {
-    transform: scale(1.2) translateY(-10px);
-  }
-}
-
-.shadow {
-    position: absolute;
-    top: 300px;
-    left: 175px;
-    width: 50px;
-    height: 50px;
-    background-color: #bbb;
-    box-shadow: 0 0 40px 40px #bbb;
-    animation: shadow 5s infinite linear;
-  }
-  
-  @keyframes shadow {
-    0% {
-      transform: rotateX(90deg) rotateZ(0deg);
-    }
-    100% {
-      transform: rotateX(90deg) rotateZ(-360deg);
-    }
-  } */
 
   .skills
   {
@@ -144,43 +52,65 @@
   }
   
 
-  .skill.skill:nth-child(2n){
-    background: #510632;
-  }
+.skills ul{
+  display: flex;
+}
 
-  .skill:nth-child(3n)
-  {
-    background: #131e2f;
-  }
+.skilllist{
+  display: flex;
+  width: 80px;
+  height: 80px;
+  justify-content: center;
+  align-items: center;
+  list-style: none;
+  position: relative;
+  margin: 30px;
+  transition: 0.5s;
+}
 
-  .skill:nth-child(even)
-  {
-    animation: topdown 2s alternate infinite;
-  }
+.skilllist:hover
+{
+  z-index: 10000;
+  transform: scale(0.75);
+}
 
-  .skill:nth-child(odd)
-  {
-    animation: downtop 2s alternate infinite;
-  }
 
-  @keyframes topdown
-  {
-    0% {
-      transform:translateY(-20px);
-    }
-    100%
-    {
-      transform:translateY(20px);
-    }
-  }
+.skilllist::before
+{
+  content: '';
+  position: absolute;
+  inset: 30px;
+  box-shadow: 0 0 0 10px #1da1f2, 0 0 0 20px #070410, 0 0 0 22px #1da1f2;
+  transition: 0.5s;
+}
 
-  @keyframes downtop
-  {
-    0% {
-      transform:translateY(20px);
-    }
-    100%
-    {
-      transform:translateY(-20px);
-    }
-  }
+.skilllist::after
+{
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: #070410;
+  transform: rotate(45deg);
+  z-index: 0;
+}
+
+.skilllist:hover::before
+{
+  inset: 0;
+}
+
+
+.skilla{
+  position: relative;
+  text-decoration: none;
+  font-size: 2rem;
+  transition: 0.4s;
+  z-index: 1;
+}
+
+.skilllist:hover .skilla
+{
+  font-size: 3rem;
+  filter: drop-shadow(0 0 20px #1da1f2) drop-shadow(0 0 40px #1da1f2) drop-shadow(0 0 60px #1da1f2);
+}
+
