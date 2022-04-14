@@ -8,9 +8,39 @@ import { SiMongodb } from "react-icons/si";
 const Skills = () => {
   return (
     <div className={style.skillbox}>
-      <h3>Skills</h3>
+      {/* <h3>Skills</h3> */}
       <div className={style.skills}>
         <ul>
+          <li className={style.skilllist}>
+            <a href="/" className={style.skilla}>
+              <FaCss3Alt style={{ color: "#9FC088" }} />
+            </a>
+          </li>
+          <li className={style.skilllist}>
+            <a href="/" className={style.skilla}>
+              <FaHtml5 />
+            </a>
+          </li>
+          <li className={style.skilllist}>
+            <a href="/" className={style.skilla}>
+              <IoLogoJavascript />
+            </a>
+          </li>
+          <li className={style.skilllist}>
+            <a href="/" className={style.skilla}>
+              <FaReact />
+            </a>
+          </li>
+          <li className={style.skilllist}>
+            <a href="/" className={style.skilla}>
+              <SiMongodb />
+            </a>
+          </li>
+          <li className={style.skilllist}>
+            <a href="/" className={style.skilla}>
+              <FaNodeJs />
+            </a>
+          </li>
           <li className={style.skilllist}>
             <a href="/" className={style.skilla}>
               <FaCss3Alt style={{ color: "#9FC088" }} />

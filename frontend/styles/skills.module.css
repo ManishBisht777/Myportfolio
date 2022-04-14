@@ -13,12 +13,26 @@
   justify-content: center;
   align-items: center;
   flex-direction: column;
+  position: relative;
   color: #fff;
+  overflow: hidden;
+}
+
+.skillbox::before
+{
+  content: "Skills Skills Skills Skills Skills Skills Skills Skills Skills Skills Skills Skills Skills Skills Skills Skills Skills Skills Skills Skills Skills Skills Skills Skills Skills Skills Skills Skills Skills Skills Skills Skills Skills Skills Skills Skills Skills Skills Skills Skills Skills Skills Skills Skills Skills Skills Skills Skills Skills Skills Skills Skills Skills Skills Skills Skills Skills Skills Skills Skills";
+  position: absolute;
+  font-size: 6rem;
+  color: #2c2c2c;
+  z-index: 0;
+  overflow: hidden;
+  transform: rotate(-45deg);
 }
 
 .skillbox h3{
   font-size: 5vmax;
   letter-spacing: 1px;
+  z-index: 1000;
 }
 .container
 {
@@ -54,6 +68,10 @@
 
 .skills ul{
   display: flex;
+  flex-wrap: wrap;
+  max-width: 700px;
+  justify-content: center;
+  align-items: center;
 }
 
 .skilllist{
