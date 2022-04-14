@@ -9,6 +9,10 @@ import {
   TimelineOppositeContent,
 } from "@mui/lab";
 
+import { FaReact } from "react-icons/fa";
+
+import { amber } from "@mui/material/colors";
+
 // import { Event } from "@mui/icons-material";
 import Typography from "@mui/material/Typography";
 
@@ -33,7 +37,9 @@ const TimeLine = ({ timelines = [] }) => {
 
             <TimelineSeparator>
               <TimelineConnector />
-              <TimelineDot color="success">{/* <Event /> */}</TimelineDot>
+              <TimelineDot color="success">
+                <FaReact />
+              </TimelineDot>
               <TimelineConnector />
             </TimelineSeparator>
             <TimelineContent sx={{ py: "12px", px: 2 }}>
