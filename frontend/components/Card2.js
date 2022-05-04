@@ -5,7 +5,6 @@ import style from "../styles/card.module.css";
 
 import bg from "../assets/bg6.jpg";
 
-import AiFillGithub from "react-icons/ai";
 import Image from "next/image";
 
 const Card2 = () => {
