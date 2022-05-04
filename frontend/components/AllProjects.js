@@ -33,13 +33,16 @@ const AllProjects = () => {
           <SwiperSlide className={Style.swiperslide}>
             <Card2 />
           </SwiperSlide>
-          <SwiperSlide className={Style.swiperslide}>
+          <SwiperSlide>
             <Card2 />
           </SwiperSlide>
-          <SwiperSlide className={Style.swiperslide}>
+          <SwiperSlide>
             <Card2 />
           </SwiperSlide>
-          <SwiperSlide className={Style.swiperslide}>
+          <SwiperSlide>
+            <Card2 />
+          </SwiperSlide>
+          <SwiperSlide>
             <Card2 />
           </SwiperSlide>
         </Swiper>
