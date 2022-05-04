@@ -9,6 +9,7 @@ import "swiper/css/pagination";
 import { Swiper, SwiperSlide } from "swiper/react";
 
 import Style from "../styles/allprojects.module.css";
+import Card2 from "./card2";
 import Hostedprojectcard from "./Hostedprojectcard";
 
 const AllProjects = () => {
@@ -30,19 +31,16 @@ const AllProjects = () => {
           // className="mySwiper"
         >
           <SwiperSlide className={Style.swiperslide}>
-            <Hostedprojectcard />
+            <Card2 />
           </SwiperSlide>
-          <SwiperSlide>
-            <Hostedprojectcard />
+          <SwiperSlide className={Style.swiperslide}>
+            <Card2 />
           </SwiperSlide>
-          <SwiperSlide>
-            <Hostedprojectcard />
+          <SwiperSlide className={Style.swiperslide}>
+            <Card2 />
           </SwiperSlide>
-          <SwiperSlide>
-            <Hostedprojectcard />
-          </SwiperSlide>
-          <SwiperSlide>
-            <Hostedprojectcard />
+          <SwiperSlide className={Style.swiperslide}>
+            <Card2 />
           </SwiperSlide>
         </Swiper>
       </div>

@@ -1,0 +1,9 @@
+
+All Project Component :
+	
+	Full page slider
+
+	each slider contain card  : -
+		1) Card (Image , Name , links)
+		2) Description (Detailed Desc Including tech Stack) 
+	
