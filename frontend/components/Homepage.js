@@ -5,7 +5,7 @@ import Navbar from "./Navbar";
 import Skills from "./Skills";
 import TimeLine from "./TimeLine";
 import TopProjects from "./TopProjects";
-
+import Footer from "./Footer";
 const Homepage = () => {
   return (
     <>
@@ -15,6 +15,7 @@ const Homepage = () => {
       <TimeLine timelines={[1, 2, 3, 4]} />
       <AllProjects />
       <Skills />
+      <Footer />
     </>
   );
 };

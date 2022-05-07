@@ -1,0 +1,102 @@
+.footer {
+  background: #171925;
+  color: #837285;
+  text-align: center;
+  width: 100%;
+  padding: 10px 0px;
+}
+
+.footer ion-icon {
+  color: #fff;
+}
+.footer span a {
+  color: rgb(156, 107, 179);
+  text-decoration: none;
+}
+
+.foot {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+.foot1 {
+  margin: 30px;
+}
+.foot2 {
+  margin: 30px;
+}
+.foot2 .text {
+  font-size: 30px;
+}
+
+.foot2 .field {
+  margin: 10px;
+}
+.footer ul li {
+  list-style: none;
+  margin: 4px;
+}
+.foot1 ul {
+  margin-top: 20px;
+}
+.foot1 ul li {
+  margin: 10px;
+}
+.foot1 ul li a {
+  color: rgb(120 120 120);
+  text-decoration: none;
+  transition: 0.3s;
+  cursor: pointer;
+}
+.foot1 ul li a:hover {
+  transition: 0.3s;
+  color: darkgrey;
+  border-bottom: 1px solid #454c45;
+}
+.footer input {
+  border: none;
+  padding: 10px 20px;
+  color: #fff;
+  background: #1c202e;
+  border-radius: 5px;
+}
+.footer span a:hover {
+  text-decoration: underline 1px solid rgb(104, 104, 104);
+  transition: 0.3s;
+}
+
+.footer span i {
+  color: hotpink;
+}
+
+.footer button {
+  padding: 10px 15px;
+  margin-top: 40px;
+  border: 1px solid #222222;
+  letter-spacing: 1px;
+  border-radius: 10px;
+  color: rgb(211, 211, 211);
+  background: #171925;
+  box-shadow: 0px 10px 42px #090a0f, -21px -21px 42px #25283b;
+}
+
+.footer button a {
+  text-decoration: none;
+  color: #000;
+}
+
+.footer button:hover {
+  transition: 0.3s;
+  cursor: pointer;
+  background: transparent;
+  color: #fff;
+}
+
+.foot3 ul {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 10px;
+  margin-left: -25px;
+}
+
