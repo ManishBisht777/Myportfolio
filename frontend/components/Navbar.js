@@ -43,14 +43,14 @@ const Navbar = () => {
           <Link href="/Home">
             <motion.a variants={item}>Home</motion.a>
           </Link>
-          <Link href="/TopProject">
-            <motion.a variants={item}>Projects</motion.a>
+          <Link href="/About">
+            <motion.a variants={item}>About</motion.a>
           </Link>
           <motion.a href="/TopProject" variants={item}>
             Tools
           </motion.a>
           <motion.a href="/TopProject" variants={item}>
-            WorkExperiece
+            No idea
           </motion.a>
         </motion.ul>
       </div>
