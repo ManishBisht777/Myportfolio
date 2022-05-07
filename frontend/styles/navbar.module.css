@@ -12,7 +12,7 @@
   width: 95%;
   height: 50px;
   margin-top: 15px;
-  border: 1px solid #444444;
+  border: 2px solid #444444;
   /* clip-path: polygon(0 0, 75% 0, 100% 38%, 100% 100%, 0 100%); */
   /* border-bottom: 5px solid gray; */
   /* border-radius: 5px; */
@@ -40,7 +40,7 @@
   top: -16px;
   left: -16px;
   transform: rotate(45deg);
-  border-right: 1px solid #444444;
+  border-right: 2px solid #444444;
   background: #010205;
 }
 
@@ -64,11 +64,11 @@
   bottom: -16px;
   right: -16px;
   transform: rotate(45deg);
-  border-left: 1px solid #444444;
+  border-left: 2px solid #444444;
   background: #010205;
 }
 .navtitle {
-  font-family: "Stint Ultra Condensed", cursive;
+  /* font-family: "Stint Ultra Condensed", cursive; */
   font-size: 25px;
   font-weight: 500;
   /* color: #f8e867; */
@@ -110,7 +110,6 @@
   display: flex;
   border: none;
   font-size: 14px;
-  font-weight: bold;
   align-items: center;
   justify-content: center;
   position: relative;

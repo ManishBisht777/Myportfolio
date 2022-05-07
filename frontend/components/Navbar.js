@@ -46,9 +46,9 @@ const Navbar = () => {
           <Link href="/About">
             <motion.a variants={item}>About</motion.a>
           </Link>
-          <motion.a href="/TopProject" variants={item}>
-            Tools
-          </motion.a>
+          <Link href="/Demo">
+            <motion.a variants={item}>Tools</motion.a>
+          </Link>
           <motion.a href="/TopProject" variants={item}>
             No idea
           </motion.a>
