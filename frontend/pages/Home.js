@@ -10,7 +10,7 @@ const Home = () => {
     <>
       <Landingpage />
       <TopProjects />
-      <TimeLine timelines={[1, 2, 3, 4]} />
+      <TimeLine />
       <AllProjects />
       <Skills />
       <Footer />

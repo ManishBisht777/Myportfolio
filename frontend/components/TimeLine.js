@@ -18,7 +18,33 @@ import Typography from "@mui/material/Typography";
 
 import style from "../styles/timeline.module.css";
 
-const TimeLine = ({ timelines = [] }) => {
+const timelines = [
+  {
+    date: "12-10-2022",
+    name: "Hello 1",
+    description:
+      "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the .",
+  },
+  {
+    date: "12-10-2022",
+    name: "Hello 2",
+    description:
+      "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the .",
+  },
+  {
+    date: "12-10-2022",
+    name: "Hello 3",
+    description:
+      "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the .",
+  },
+  {
+    date: "12-10-2022",
+    name: "Hello 4",
+    description:
+      "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the .",
+  },
+];
+const TimeLine = () => {
   return (
     <div className={style.timeline}>
       <h4 className={style.timelineheading}>Meri Timeline</h4>
@@ -31,7 +57,7 @@ const TimeLine = ({ timelines = [] }) => {
               variant="body2"
               color="secondary"
             >
-              12/12/2003
+              {item.date}
               {/* {item.date.toString().split("T")[0]} */}
             </TimelineOppositeContent>
 
@@ -43,8 +69,8 @@ const TimeLine = ({ timelines = [] }) => {
               <TimelineConnector />
             </TimelineSeparator>
             <TimelineContent sx={{ py: "12px", px: 2 }}>
-              <Typography variant="h6">GetSetBuy</Typography>
-              <Typography>Online Ecommerce webiste</Typography>
+              <Typography variant="h6">{item.name}</Typography>
+              <Typography>{item.description}</Typography>
             </TimelineContent>
           </TimelineItem>
         ))}

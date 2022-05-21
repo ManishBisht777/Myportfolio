@@ -9,6 +9,14 @@
   border: 5px solid gray;
   z-index: 1;
   border-radius: 3px;
+  width: 250px;
+  height: 250px;
+}
+
+.imagediv .image{
+  width: 250px;
+  height: 250px;
+  object-fit: cover;
 }
 
 .imagecontainer:nth-child(even) {

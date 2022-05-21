@@ -10,17 +10,17 @@ import styles from "../styles/topprojects.module.css";
 const topproject = [
   {
     id: "01",
-    image: p1,
+    image: "https://picsum.photos/220/250",
     name: "project 1",
   },
   {
     id: "02",
-    image: p2,
+    image: "https://picsum.photos/220/250",
     name: "project 2",
   },
   {
     id: "03",
-    image: p3,
+    image: "https://picsum.photos/220/250",
     name: "project 3",
   },
 ];
