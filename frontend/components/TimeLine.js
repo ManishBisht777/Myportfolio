@@ -11,8 +11,6 @@ import {
 
 import { FaReact } from "react-icons/fa";
 
-import { amber } from "@mui/material/colors";
-
 // import { Event } from "@mui/icons-material";
 import Typography from "@mui/material/Typography";
 
@@ -20,34 +18,25 @@ import style from "../styles/timeline.module.css";
 
 const timelines = [
   {
-    date: "12-10-2022",
-    name: "Hello 1",
-    description:
-      "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the .",
+    date: "Who Knows",
+    name: "Google",
+    description: "SDE",
   },
   {
-    date: "12-10-2022",
-    name: "Hello 2",
-    description:
-      "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the .",
+    date: "2020-2023",
+    name: "Keshav MahaVidayalaya",
+    description: "BSC(H) Computer science",
   },
   {
-    date: "12-10-2022",
-    name: "Hello 3",
-    description:
-      "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the .",
-  },
-  {
-    date: "12-10-2022",
-    name: "Hello 4",
-    description:
-      "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the .",
+    date: "2018-2020",
+    name: "Rpvv Yamuna Vihar",
+    description: "Senior Secondary PCM - 93.25%",
   },
 ];
 const TimeLine = () => {
   return (
     <div className={style.timeline}>
-      <h4 className={style.timelineheading}>Meri Timeline</h4>
+      <h4 className={style.timelineheading}>Time Line</h4>
       <Timeline position="alternate">
         {timelines.map((item, index) => (
           <TimelineItem key={index}>
@@ -58,9 +47,7 @@ const TimeLine = () => {
               color="secondary"
             >
               {item.date}
-              {/* {item.date.toString().split("T")[0]} */}
             </TimelineOppositeContent>
-
             <TimelineSeparator>
               <TimelineConnector />
               <TimelineDot color="success">

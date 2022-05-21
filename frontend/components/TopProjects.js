@@ -1,9 +1,6 @@
 import { useState } from "react";
 
 import TopProjectCard from "./TopProjectCard";
-import p1 from "../assets/1.png";
-import p2 from "../assets/2.png";
-import p3 from "../assets/5.png";
 
 import styles from "../styles/topprojects.module.css";
 
