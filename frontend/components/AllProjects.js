@@ -9,9 +9,8 @@ import "swiper/css/effect-cards";
 import "swiper/css/pagination";
 import { Swiper, SwiperSlide } from "swiper/react";
 
-import Style from "../styles/allprojects.module.css";
-import Card2 from "./card2";
-import Hostedprojectcard from "./Hostedprojectcard";
+import Style from "../Styles/allprojects.module.css";
+import { AiFillGithub, AiOutlineLink } from "react-icons/ai";
 
 const AllProjects = (props) => {
   const [data, setdata] = useState("");
@@ -41,7 +40,7 @@ const AllProjects = (props) => {
 
       <div className={Style.sliderdiv}>
         <Swiper
-          // slidesPerView={4}
+          slidesPerView={4}
           spaceBetween={10}
           loop={true}
           centeredSlides={true}
@@ -57,7 +56,33 @@ const AllProjects = (props) => {
             data.data.map((item) => {
               return (
                 <SwiperSlide key={item.id} className={Style.swiperslide}>
-                  <Card2 />
+                  <div className={Style.card}>
+                    <div className={Style.card_img}>
+                      <img
+                        src={
+                          item.attributes.CoverPhoto.data &&
+                          item.attributes.CoverPhoto.data.attributes.name
+                        }
+                        alt="Picture of the author"
+                      />
+                    </div>
+
+                    <div className={Style.card_info}>
+                      <div className={Style.card_name}>
+                        <p>{item.attributes.Name}</p>
+                      </div>
+                      <div className={Style.card_links}>
+                        <button>
+                          <a href={item.attributes.Githublink}>
+                            <AiFillGithub size={20} />
+                          </a>
+                        </button>
+                        <button>
+                          <AiOutlineLink size={20} />
+                        </button>
+                      </div>
+                    </div>
+                  </div>
                 </SwiperSlide>
               );
             })}
