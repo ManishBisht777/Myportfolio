@@ -1,5 +1,6 @@
 import React from "react";
 import { useEffect, useState } from "react";
+import Link from "next/link";
 
 // nested vertical slider - slider 1 in slider and image gallery at 2nd slide
 import { Navigation, Autoplay } from "swiper";
@@ -56,33 +57,35 @@ const AllProjects = (props) => {
             data.data.map((item) => {
               return (
                 <SwiperSlide key={item.id} className={Style.swiperslide}>
-                  <div className={Style.card}>
-                    <div className={Style.card_img}>
-                      <img
-                        src={
-                          item.attributes.CoverPhoto.data &&
-                          item.attributes.CoverPhoto.data.attributes.name
-                        }
-                        alt="Picture of the author"
-                      />
-                    </div>
+                  <Link href={`/project/${item.attributes.slug}`}>
+                    <div className={Style.card}>
+                      <div className={Style.card_img}>
+                        <img
+                          src={
+                            item.attributes.CoverPhoto.data &&
+                            item.attributes.CoverPhoto.data.attributes.name
+                          }
+                          alt="Picture of the author"
+                        />
+                      </div>
 
-                    <div className={Style.card_info}>
-                      <div className={Style.card_name}>
-                        <p>{item.attributes.Name}</p>
-                      </div>
-                      <div className={Style.card_links}>
-                        <button>
-                          <a href={item.attributes.Githublink}>
-                            <AiFillGithub size={20} />
-                          </a>
-                        </button>
-                        <button>
-                          <AiOutlineLink size={20} />
-                        </button>
+                      <div className={Style.card_info}>
+                        <div className={Style.card_name}>
+                          <p>{item.attributes.Name}</p>
+                        </div>
+                        <div className={Style.card_links}>
+                          <button>
+                            <a href={item.attributes.Githublink}>
+                              <AiFillGithub size={20} />
+                            </a>
+                          </button>
+                          <button>
+                            <AiOutlineLink size={20} />
+                          </button>
+                        </div>
                       </div>
                     </div>
-                  </div>
+                  </Link>
                 </SwiperSlide>
               );
             })}
