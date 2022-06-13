@@ -89,7 +89,9 @@
 .navlinks ul a {
   margin: 0px 20px;
   position: relative;
+  cursor: pointer;
 }
+
 
 .navlinks ul a::before {
   content: "";
