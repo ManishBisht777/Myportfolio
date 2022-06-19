@@ -18,22 +18,13 @@ const AllProjects = (props) => {
 
   React.useEffect(() => {
     const fetchdata = async () => {
-      let headers = {
-        Authorization:
-          "Bearer 23d0e366c6479ab7e52a182aacea18d843c4495b8ef1b29011e83e632cc547ad3ee1d2dd3d522a96e2bf35e64a0fe80694238344ab3846479abc1a57856090a35f393765ad1e240776a994fddebe095b393f5bad510c514be6c11d70d91c95abdc84882cf81c3d1878d1f61c30d60e5a46abdc6ed2ee6172ac2b19b9999ee22f",
-      };
-      let res = await fetch("http://localhost:1337/api/projects?populate=*", {
-        headers: headers,
-      });
-
+      let res = await fetch("http://localhost:1337/api/projects?populate=*");
       const json = await res.json();
       setdata(json);
     };
 
     fetchdata();
   }, []);
-
-  console.log(data);
 
   return (
     <div className={Style.allprojectbx}>

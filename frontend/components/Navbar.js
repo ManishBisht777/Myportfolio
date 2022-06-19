@@ -49,7 +49,7 @@ const Navbar = () => {
           <Link href="/Demo">
             <motion.a variants={item}>Tools</motion.a>
           </Link>
-          <Link href="/Demo">
+          <Link href="/Login">
             <motion.a variants={item}>Login</motion.a>
           </Link>
         </motion.ul>
