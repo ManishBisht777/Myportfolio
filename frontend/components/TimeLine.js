@@ -40,7 +40,9 @@ const TimeLine = () => {
 
   React.useEffect(() => {
     const fetchdata = async () => {
-      let res = await fetch("http://localhost:1337/api/timelines?populate=*");
+      let res = await fetch(
+        `${process.env.NEXT_PUBLIC_STRAPI_URL}/api/timelines?populate=*`
+      );
       const json = await res.json();
       setdata(json);
     };

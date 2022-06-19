@@ -1,0 +1,51 @@
+{
+  "kind": "collectionType",
+  "collectionName": "topprojects",
+  "info": {
+    "singularName": "topproject",
+    "pluralName": "topprojects",
+    "displayName": "topproject"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "Name": {
+      "type": "string"
+    },
+    "Description": {
+      "type": "text"
+    },
+    "Coverphoto": {
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ],
+      "type": "media",
+      "multiple": false
+    },
+    "Gallery": {
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ],
+      "type": "media",
+      "multiple": true
+    },
+    "GithubLink": {
+      "type": "string"
+    },
+    "Livelink": {
+      "type": "string"
+    },
+    "slug": {
+      "type": "uid",
+      "targetField": "GithubLink"
+    }
+  }
+}

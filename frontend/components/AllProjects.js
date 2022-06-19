@@ -18,7 +18,9 @@ const AllProjects = (props) => {
 
   React.useEffect(() => {
     const fetchdata = async () => {
-      let res = await fetch("http://localhost:1337/api/projects?populate=*");
+      let res = await fetch(
+        `${process.env.NEXT_PUBLIC_STRAPI_URL}/api/projects?populate=*`
+      );
       const json = await res.json();
       setdata(json);
     };

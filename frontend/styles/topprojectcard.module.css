@@ -3,16 +3,22 @@
   display: flex;
   flex-direction: column;
   position: relative;
+  width: 230px;
+  height: 315px;
 }
 
 .imagediv {
   border: 5px solid gray;
   z-index: 1;
   border-radius: 3px;
+  width: 230px;
+  height: 230px;
 }
 
 .imagediv .image{
-  object-fit: cover;
+  /* width: 100%;
+height: 100%;
+object-fit: cover; */
 }
 
 .imagecontainer:nth-child(even) {

@@ -1,5 +1,4 @@
 import styles from "../styles/TopProjectCard.module.css";
-import Image from "next/image";
 
 const TopProjectCard = ({ image, name, id }) => {
   return (

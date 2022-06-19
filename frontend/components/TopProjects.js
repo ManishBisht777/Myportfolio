@@ -1,4 +1,5 @@
 import { useState } from "react";
+import React from "react";
 
 import TopProjectCard from "./TopProjectCard";
 
@@ -24,6 +25,19 @@ const topproject = [
 
 const TopProjects = () => {
   const [topprojects, settopprojects] = useState(topproject);
+  const [data, setdata] = useState("");
+
+  React.useEffect(() => {
+    const fetchdata = async () => {
+      let res = await fetch(
+        `${process.env.NEXT_PUBLIC_STRAPI_URL}/api/Topprojects?populate=*`
+      );
+      const json = await res.json();
+      setdata(json);
+    };
+
+    fetchdata();
+  }, []);
 
   return (
     <div className={styles.container}>
@@ -39,16 +53,17 @@ const TopProjects = () => {
         <button className={styles.discover}>Discover</button>
       </div>
       <div className={styles.projects}>
-        {topprojects.map((projects, index) => {
-          return (
-            <TopProjectCard
-              key={index}
-              image={projects.image}
-              name={projects.name}
-              id={projects.id}
-            />
-          );
-        })}
+        {data &&
+          data.data.map((item, index) => {
+            return (
+              <TopProjectCard
+                key={index}
+                image={item.attributes.Coverphoto.data.attributes.name}
+                name={item.attributes.Name}
+                id={item.id}
+              />
+            );
+          })}
       </div>
     </div>
   );
