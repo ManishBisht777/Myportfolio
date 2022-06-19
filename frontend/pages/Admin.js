@@ -1,17 +1,32 @@
-import React from "react";
+import { Grid } from "@mui/material";
+import BlogCard from "../src/components/dashboard/BlogCard";
+import SalesOverview from "../src/components/dashboard/SalseOverview";
+import DailyActivity from "../src/components/dashboard/DailyActivity";
+import ProductPerfomance from "../src/components/dashboard/ProductPerfomance";
+import FullLayout from "../src/layouts/FullLayout";
+import { ThemeProvider } from "@mui/material/styles";
+import theme from "../src/theme/theme";
 
-const admin = () => {
+export default function Admin() {
   return (
-    <div>
-      Lorem ipsum dolor sit amet consectetur, adipisicing elit. Est error, odit
-      ducimus illum tempora explicabo! Aperiam maxime quasi rem voluptas earum
-      blanditiis arcnesciunt labore nostrum molestias repellendus ad facilis
-      tenetur doloremque quis expedita harum ipsam incidunt eaque placeat, sunt
-      error? Obcaecati assumenda quo molestias sequi eos accusamus voluptas
-      culpa dolorem, ad esse, quibusdam sunt veritatis architecto, ab pariatur
-      reprehenderit nam a!
-    </div>
+    <ThemeProvider theme={theme}>
+      <FullLayout>
+        <Grid container spacing={0}>
+          <Grid item xs={12} lg={12}>
+            <SalesOverview />
+          </Grid>
+          {/* ------------------------- row 1 ------------------------- */}
+          <Grid item xs={12} lg={4}>
+            <DailyActivity />
+          </Grid>
+          <Grid item xs={12} lg={8}>
+            <ProductPerfomance />
+          </Grid>
+          <Grid item xs={12} lg={12}>
+            <BlogCard />
+          </Grid>
+        </Grid>
+      </FullLayout>
+    </ThemeProvider>
   );
-};
-
-export default admin;
+}
