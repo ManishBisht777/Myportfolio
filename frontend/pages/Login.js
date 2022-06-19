@@ -21,7 +21,6 @@ const Login = () => {
         }
       );
       console.log("login done", data);
-
       router.replace("/Admin");
     } catch (error) {
       console.log(error);
