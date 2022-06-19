@@ -38,10 +38,10 @@ const AllProjects = (props) => {
           spaceBetween={10}
           loop={true}
           centeredSlides={true}
-          autoplay={{
-            delay: 2500,
-            disableOnInteraction: false,
-          }}
+          // autoplay={{
+          //   delay: 2500,
+          //   disableOnInteraction: false,
+          // }}
           navigation={true}
           modules={[Navigation, Autoplay]}
           // className="mySwiper"
