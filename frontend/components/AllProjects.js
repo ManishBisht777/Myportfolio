@@ -107,31 +107,31 @@ const AllProjects = (props) => {
           {projects.map((item, index) => {
             return (
               <SwiperSlide key={index} className={Style.swiperslide}>
-                {/* <Link href={`/project/${item.attributes.slug}`}> */}
-                <div className={Style.card}>
-                  <div className={Style.card_img}>
-                    <img src={item.image} alt="Picture of the author" />
-                  </div>
+                <Link href={`/project/${item.name}`}>
+                  <div className={Style.card}>
+                    <div className={Style.card_img}>
+                      <img src={item.image} alt="Picture of the author" />
+                    </div>
 
-                  <div className={Style.card_info}>
-                    <div className={Style.card_name}>
-                      <p>{item.name}</p>
-                    </div>
-                    <div className={Style.card_links}>
-                      <button>
-                        <Link href={`${item.githublink}`}>
-                          <AiFillGithub size={20} />
-                        </Link>
-                      </button>
-                      <button>
-                        <Link href={`${item.livelink}`}>
-                          <AiOutlineLink size={20} />
-                        </Link>
-                      </button>
+                    <div className={Style.card_info}>
+                      <div className={Style.card_name}>
+                        <p>{item.name}</p>
+                      </div>
+                      <div className={Style.card_links}>
+                        <button>
+                          <Link href={`${item.githublink}`}>
+                            <AiFillGithub size={20} />
+                          </Link>
+                        </button>
+                        <button>
+                          <Link href={`${item.livelink}`}>
+                            <AiOutlineLink size={20} />
+                          </Link>
+                        </button>
+                      </div>
                     </div>
                   </div>
-                </div>
-                {/* </Link> */}
+                </Link>
               </SwiperSlide>
             );
           })}
