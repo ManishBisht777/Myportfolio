@@ -13,20 +13,78 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import Style from "../Styles/allprojects.module.css";
 import { AiFillGithub, AiOutlineLink } from "react-icons/ai";
 
+let projects = [
+  {
+    name: "sample name",
+    description: "sample desc",
+    githublink: "githublink",
+    livelink: "egtsetloda",
+    startdate: "12-1-20",
+    enddate: "12-1-212",
+    techstack: ["html", "css", "js", "node", "mongodb"],
+    image:
+      "https://i.picsum.photos/id/931/220/250.jpg?hmac=37E4_2yVB_qQrDBsjTvs0wIPOL_WZsf5JkKSnBLgo-U",
+  },
+  {
+    name: "sample name 2",
+    description: "sample desc",
+    githublink: "githublasdasdadink",
+    livelink: "livelink",
+    startdate: "12-1-20",
+    enddate: "12-1-212",
+    techstack: ["html", "css", "js", "node", "mongodb"],
+    image:
+      "https://i.picsum.photos/id/931/220/250.jpg?hmac=37E4_2yVB_qQrDBsjTvs0wIPOL_WZsf5JkKSnBLgo-U",
+  },
+  {
+    name: "sample name 3",
+    description: "sample desc",
+    githublink: "githublink",
+    livelink: "asdad",
+    startdate: "12-1-20",
+    enddate: "12-1-212",
+    techstack: ["html", "css", "js", "node", "mongodb"],
+    image:
+      "https://i.picsum.photos/id/931/220/250.jpg?hmac=37E4_2yVB_qQrDBsjTvs0wIPOL_WZsf5JkKSnBLgo-U",
+  },
+  {
+    name: "sample name 4",
+    description: "sample desc",
+    githublink: "githublink",
+    livelink: "adadasdasda",
+    startdate: "12-1-20",
+    enddate: "12-1-212",
+    techstack: ["html", "css", "js", "node", "mongodb"],
+    image:
+      "https://i.picsum.photos/id/931/220/250.jpg?hmac=37E4_2yVB_qQrDBsjTvs0wIPOL_WZsf5JkKSnBLgo-U",
+  },
+  {
+    name: "sample name 5",
+    description: "sample desc",
+    githublink: "asdasdadsad",
+    livelink: "livelink",
+    startdate: "12-1-20",
+    enddate: "12-1-212",
+    techstack: ["html", "css", "js", "node", "mongodb"],
+    image:
+      "https://i.picsum.photos/id/931/220/250.jpg?hmac=37E4_2yVB_qQrDBsjTvs0wIPOL_WZsf5JkKSnBLgo-U",
+  },
+];
+
 const AllProjects = (props) => {
-  const [data, setdata] = useState("");
+  // const [data, setdata] = useState("");
 
-  React.useEffect(() => {
-    const fetchdata = async () => {
-      let res = await fetch(
-        `${process.env.NEXT_PUBLIC_STRAPI_URL}/api/projects?populate=*`
-      );
-      const json = await res.json();
-      setdata(json);
-    };
+  // React.useEffect(() => {
+  //   const fetchdata = async () => {
+  //     let res = await fetch(
+  //       `${process.env.NEXT_PUBLIC_STRAPI_URL}/api/projects?populate=*`
+  //     );
+  //     const json = await res.json();
+  //     setdata(json);
+  //   };
 
-    fetchdata();
-  }, []);
+  //   fetchdata();
+  // }, []);
 
   return (
     <div className={Style.allprojectbx}>
@@ -46,42 +104,37 @@ const AllProjects = (props) => {
           modules={[Navigation, Autoplay]}
           // className="mySwiper"
         >
-          {data &&
-            data.data.map((item) => {
-              return (
-                <SwiperSlide key={item.id} className={Style.swiperslide}>
-                  <Link href={`/project/${item.attributes.slug}`}>
-                    <div className={Style.card}>
-                      <div className={Style.card_img}>
-                        <img
-                          src={
-                            item.attributes.CoverPhoto.data &&
-                            item.attributes.CoverPhoto.data.attributes.name
-                          }
-                          alt="Picture of the author"
-                        />
-                      </div>
+          {projects.map((item, index) => {
+            return (
+              <SwiperSlide key={index} className={Style.swiperslide}>
+                {/* <Link href={`/project/${item.attributes.slug}`}> */}
+                <div className={Style.card}>
+                  <div className={Style.card_img}>
+                    <img src={item.image} alt="Picture of the author" />
+                  </div>
 
-                      <div className={Style.card_info}>
-                        <div className={Style.card_name}>
-                          <p>{item.attributes.Name}</p>
-                        </div>
-                        <div className={Style.card_links}>
-                          <button>
-                            <a href={item.attributes.Githublink}>
-                              <AiFillGithub size={20} />
-                            </a>
-                          </button>
-                          <button>
-                            <AiOutlineLink size={20} />
-                          </button>
-                        </div>
-                      </div>
+                  <div className={Style.card_info}>
+                    <div className={Style.card_name}>
+                      <p>{item.name}</p>
                     </div>
-                  </Link>
-                </SwiperSlide>
-              );
-            })}
+                    <div className={Style.card_links}>
+                      <button>
+                        <Link href={`${item.githublink}`}>
+                          <AiFillGithub size={20} />
+                        </Link>
+                      </button>
+                      <button>
+                        <Link href={`${item.livelink}`}>
+                          <AiOutlineLink size={20} />
+                        </Link>
+                      </button>
+                    </div>
+                  </div>
+                </div>
+                {/* </Link> */}
+              </SwiperSlide>
+            );
+          })}
         </Swiper>
       </div>
     </div>

@@ -81,12 +81,18 @@ margin-right: 30px;
 .card_links button
 {
     margin-top: 30px;
-    border: none;
-    border-radius: 3px;
-    margin-left: 20px;
-    padding: 3px 7px;
-    font-size: 15px;
-    cursor: pointer;
+border: none;
+border-radius: 49px;
+margin-left: 20px;
+padding: 3px 7px;
+font-size: 15px;
+cursor: pointer;
+background: black;
+width: 30px;
+height: 30px;
+display: flex;
+justify-content: center;
+align-items: center;
 }
 
 .card_links button a{

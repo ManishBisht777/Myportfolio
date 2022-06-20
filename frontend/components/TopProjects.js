@@ -4,40 +4,44 @@ import React from "react";
 import TopProjectCard from "./TopProjectCard";
 
 import styles from "../styles/topprojects.module.css";
+import Link from "next/link";
 
 const topproject = [
   {
     id: "01",
     image: "https://picsum.photos/220/250",
     name: "project 1",
+    link: "getsetbuy.netlify.app/",
   },
   {
     id: "02",
     image: "https://picsum.photos/220/250",
     name: "project 2",
+    link: "getsetbuy.netlify.app/",
   },
   {
     id: "03",
     image: "https://picsum.photos/220/250",
     name: "project 3",
+    link: "getsetbuy.netlify.app/",
   },
 ];
 
 const TopProjects = () => {
-  const [topprojects, settopprojects] = useState(topproject);
-  const [data, setdata] = useState("");
+  // const [topprojects, settopprojects] = useState(topproject);
+  // const [data, setdata] = useState("");
 
-  React.useEffect(() => {
-    const fetchdata = async () => {
-      let res = await fetch(
-        `${process.env.NEXT_PUBLIC_STRAPI_URL}/api/Topprojects?populate=*`
-      );
-      const json = await res.json();
-      setdata(json);
-    };
+  // React.useEffect(() => {
+  //   const fetchdata = async () => {
+  //     let res = await fetch(
+  //       `${process.env.NEXT_PUBLIC_STRAPI_URL}/api/Topprojects?populate=*`
+  //     );
+  //     const json = await res.json();
+  //     setdata(json);
+  //   };
 
-    fetchdata();
-  }, []);
+  //   fetchdata();
+  // }, []);
 
   return (
     <div className={styles.container}>
@@ -53,17 +57,17 @@ const TopProjects = () => {
         <button className={styles.discover}>Discover</button>
       </div>
       <div className={styles.projects}>
-        {data &&
-          data.data.map((item, index) => {
-            return (
-              <TopProjectCard
-                key={index}
-                image={item.attributes.Coverphoto.data.attributes.name}
-                name={item.attributes.Name}
-                id={item.id}
-              />
-            );
-          })}
+        {topproject.map((item, index) => {
+          return (
+            <TopProjectCard
+              key={index}
+              image={item.image}
+              name={item.name}
+              id={item.id}
+              link={item.link}
+            />
+          );
+        })}
       </div>
     </div>
   );

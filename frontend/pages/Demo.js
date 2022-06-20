@@ -1,5 +1,63 @@
 import React from "react";
 
+let projects = [
+  {
+    name: "sample name",
+    description: "sample desc",
+    githublink: "githublink",
+    livelink: "livelink",
+    startdate: "12-1-20",
+    enddate: "12-1-212",
+    techstack: ["html", "css", "js", "node", "mongodb"],
+    image:
+      "https://i.picsum.photos/id/931/220/250.jpg?hmac=37E4_2yVB_qQrDBsjTvs0wIPOL_WZsf5JkKSnBLgo-U",
+  },
+  {
+    name: "sample name 2",
+    description: "sample desc",
+    githublink: "githublink",
+    livelink: "livelink",
+    startdate: "12-1-20",
+    enddate: "12-1-212",
+    techstack: ["html", "css", "js", "node", "mongodb"],
+    image:
+      "https://i.picsum.photos/id/931/220/250.jpg?hmac=37E4_2yVB_qQrDBsjTvs0wIPOL_WZsf5JkKSnBLgo-U",
+  },
+  {
+    name: "sample name 3",
+    description: "sample desc",
+    githublink: "githublink",
+    livelink: "livelink",
+    startdate: "12-1-20",
+    enddate: "12-1-212",
+    techstack: ["html", "css", "js", "node", "mongodb"],
+    image:
+      "https://i.picsum.photos/id/931/220/250.jpg?hmac=37E4_2yVB_qQrDBsjTvs0wIPOL_WZsf5JkKSnBLgo-U",
+  },
+  {
+    name: "sample name 4",
+    description: "sample desc",
+    githublink: "githublink",
+    livelink: "livelink",
+    startdate: "12-1-20",
+    enddate: "12-1-212",
+    techstack: ["html", "css", "js", "node", "mongodb"],
+    image:
+      "https://i.picsum.photos/id/931/220/250.jpg?hmac=37E4_2yVB_qQrDBsjTvs0wIPOL_WZsf5JkKSnBLgo-U",
+  },
+  {
+    name: "sample name 5",
+    description: "sample desc",
+    githublink: "githublink",
+    livelink: "livelink",
+    startdate: "12-1-20",
+    enddate: "12-1-212",
+    techstack: ["html", "css", "js", "node", "mongodb"],
+    image:
+      "https://i.picsum.photos/id/931/220/250.jpg?hmac=37E4_2yVB_qQrDBsjTvs0wIPOL_WZsf5JkKSnBLgo-U",
+  },
+];
+
 const Demo = () => {
   return (
     <>

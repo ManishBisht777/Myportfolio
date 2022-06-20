@@ -1,13 +1,16 @@
+import Link from "next/link";
 import styles from "../styles/TopProjectCard.module.css";
 
-const TopProjectCard = ({ image, name, id }) => {
+const TopProjectCard = ({ image, name, id, link }) => {
   return (
-    <div className={styles.imagecontainer}>
-      <div className={styles.imagediv}>
-        <img className={styles.image} src={image} alt={name} />
+    <Link href={`${link}`}>
+      <div className={styles.imagecontainer}>
+        <div className={styles.imagediv}>
+          <img className={styles.image} src={image} alt={name} />
+        </div>
+        <h2 className={styles.projectnumber}>{id}</h2>
       </div>
-      <h2 className={styles.projectnumber}>{id}</h2>
-    </div>
+    </Link>
   );
 };
 

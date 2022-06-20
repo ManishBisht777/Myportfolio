@@ -94,12 +94,12 @@
     display: flex;
     top:0;
     right: 0;
-    justify-content: right ;
-    align-items: center;
+    justify-content: center ;
     background: #291940;
     color: white;
     border-radius: 3px ;
-    clip-path: polygon(0 0, 100% 0, 100% 89%, 50% 100%);
+    /* clip-path: polygon(0 0, 100% 0, 100% 89%, 50% 100%); */
+    clip-path: polygon(-1px -1px, 100% 0px, 99.63% 32.00%, 46.67% 72%);
     display: none;
     transition: 0.4s;
 
@@ -107,7 +107,8 @@
 
 .card_name p{
     width: fit-content;
-margin-right: 30px;
+/* margin-right: 100px; */
+margin-top: 20px;
 }
 .card_links
 {
@@ -131,11 +132,17 @@ margin-right: 30px;
 {
     margin-top: 30px;
     border: none;
-    border-radius: 3px;
+    border-radius: 49px;
     margin-left: 20px;
     padding: 3px 7px;
     font-size: 15px;
     cursor: pointer;
+    background: black;
+    width: 30px;
+    height: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .card_links button a{
