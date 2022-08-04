@@ -1,5 +1,5 @@
 import Link from "next/link";
-import styles from "../styles/TopProjectCard.module.css";
+import styles from "../styles/topprojectcard.module.css";
 
 const TopProjectCard = ({ image, name, id, link }) => {
   return (

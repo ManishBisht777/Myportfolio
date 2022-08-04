@@ -10,7 +10,7 @@ import "swiper/css/effect-cards";
 import "swiper/css/pagination";
 import { Swiper, SwiperSlide } from "swiper/react";
 
-import Style from "../Styles/allprojects.module.css";
+import Style from "../styles/allprojects.module.css";
 import { AiFillGithub, AiOutlineLink } from "react-icons/ai";
 
 let projects = [
