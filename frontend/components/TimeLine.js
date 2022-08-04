@@ -20,16 +20,19 @@ import style from "../styles/timeline.module.css";
 
 const timelines = [
   {
+    id: "1",
     date: "Who Knows",
     name: "Google",
     description: "SDE",
   },
   {
+    id: "2",
     date: "2020-2023",
     name: "Keshav MahaVidayalaya",
     description: "BSC(H) Computer science",
   },
   {
+    id: "3",
     date: "2018-2020",
     name: "Rpvv Yamuna Vihar",
     description: "Senior Secondary PCM - 93.25%",
@@ -38,47 +41,45 @@ const timelines = [
 const TimeLine = () => {
   const [data, setdata] = useState("");
 
-  React.useEffect(() => {
-    const fetchdata = async () => {
-      let res = await fetch(
-        `${process.env.NEXT_PUBLIC_STRAPI_URL}/api/timelines?populate=*`
-      );
-      const json = await res.json();
-      setdata(json);
-    };
+  // React.useEffect(() => {
+  //   const fetchdata = async () => {
+  //     let res = await fetch(
+  //       `${process.env.NEXT_PUBLIC_STRAPI_URL}/api/timelines?populate=*`
+  //     );
+  //     const json = await res.json();
+  //     setdata(json);
+  //   };
 
-    fetchdata();
-  }, []);
+  //   fetchdata();
+  // }, []);
 
   return (
     <div className={style.timeline}>
       <h4 className={style.timelineheading}>Time Line</h4>
       <Timeline position="alternate">
-        {}
-        {data &&
-          data.data.map((item) => (
-            <TimelineItem key={item.id}>
-              <TimelineOppositeContent
-                sx={{ m: "auto 0" }}
-                align="right"
-                variant="body2"
-                color="secondary"
-              >
-                {item.attributes.Startdate}
-              </TimelineOppositeContent>
-              <TimelineSeparator>
-                <TimelineConnector />
-                <TimelineDot color="success">
-                  <FaReact />
-                </TimelineDot>
-                <TimelineConnector />
-              </TimelineSeparator>
-              <TimelineContent sx={{ py: "12px", px: 2 }}>
-                <Typography variant="h6">{item.attributes.title}</Typography>
-                <Typography>{item.attributes.Role}</Typography>
-              </TimelineContent>
-            </TimelineItem>
-          ))}
+        {timelines.map((item) => (
+          <TimelineItem key={item.id}>
+            <TimelineOppositeContent
+              sx={{ m: "auto 0" }}
+              align="right"
+              variant="body2"
+              color="secondary"
+            >
+              {item.date}
+            </TimelineOppositeContent>
+            <TimelineSeparator>
+              <TimelineConnector />
+              <TimelineDot color="success">
+                <FaReact />
+              </TimelineDot>
+              <TimelineConnector />
+            </TimelineSeparator>
+            <TimelineContent sx={{ py: "12px", px: 2 }}>
+              <Typography variant="h6">{item.name}</Typography>
+              <Typography>{item.description}</Typography>
+            </TimelineContent>
+          </TimelineItem>
+        ))}
       </Timeline>
     </div>
   );

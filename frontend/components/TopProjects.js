@@ -11,7 +11,7 @@ const topproject = [
     id: "01",
     image: "https://picsum.photos/220/250",
     name: "project 1",
-    link: "getsetbuy.netlify.app/",
+    link: "Https://getsetbuy.netlify.app/",
   },
   {
     id: "02",
