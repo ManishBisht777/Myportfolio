@@ -119,12 +119,13 @@ const AllProjects = (props) => {
                     </div>
                     <div className={Style.card_links}>
                       <button>
-                        <a
+                        <Link
                           href="https://getsetbuy.netlify.app/"
                           target="_blank"
+                          rel="noreferrer"
                         >
                           <AiFillGithub size={20} />
-                        </a>
+                        </Link>
                       </button>
                       <button>
                         <Link href={`${item.livelink}`}>
