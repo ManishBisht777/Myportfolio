@@ -1,5 +1,6 @@
 import React from "react";
 import style from "../styles/skills.module.css";
+import Link from "next/link";
 
 import { FaCss3Alt, FaHtml5, FaReact, FaNodeJs } from "react-icons/fa";
 import { IoLogoJavascript } from "react-icons/io";
