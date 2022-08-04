@@ -12,29 +12,29 @@ const Skills = () => {
       <div className={style.skills}>
         <ul>
           <li className={style.skilllist}>
-            <a href="/" className={style.skilla}>
+            <Link href="/" className={style.skilla}>
               <FaCss3Alt style={{ color: "#9FC088" }} />
-            </a>
+            </Link>
           </li>
           <li className={style.skilllist}>
-            <a href="/" className={style.skilla}>
+            <Link href="/" className={style.skilla}>
               <FaHtml5 />
-            </a>
+            </Link>
           </li>
           <li className={style.skilllist}>
-            <a href="/" className={style.skilla}>
+            <Link href="/" className={style.skilla}>
               <IoLogoJavascript />
-            </a>
+            </Link>
           </li>
           <li className={style.skilllist}>
-            <a href="/" className={style.skilla}>
+            <Link href="/" className={style.skilla}>
               <FaReact />
-            </a>
+            </Link>
           </li>
           <li className={style.skilllist}>
-            <a href="/" className={style.skilla}>
+            <Link href="/" className={style.skilla}>
               <SiMongodb />
-            </a>
+            </Link>
           </li>
         </ul>
       </div>
