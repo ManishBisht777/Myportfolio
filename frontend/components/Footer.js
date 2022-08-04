@@ -1,5 +1,6 @@
 import React from "react";
 import style from "../styles/footer.module.css";
+import Link from "next/link";
 
 import {
   FaFacebook,
@@ -18,16 +19,16 @@ function Footer() {
             <h1>Category</h1>
             <ul>
               <li>
-                <a href="/">Home</a>
+                <Link href="/">Home</Link>
               </li>
               <li>
-                <a href="/about">About</a>
+                <Link href="/about">About</Link>
               </li>
               <li>
-                <a href="/products">All Products</a>
+                <Link href="/products">All Products</Link>
               </li>
               <li>
-                <a href="/cart">Cart</a>
+                <Link href="/cart">Cart</Link>
               </li>
             </ul>
           </div>
@@ -57,28 +58,28 @@ function Footer() {
           <h1>Social as</h1>
           <ul className={style.as}>
             <li>
-              <a href="/">
+              <Link href="/">
                 <FaFacebook />
-              </a>
+              </Link>
             </li>
             <li>
-              <a href="/">
+              <Link href="/">
                 <FaTwitter />
-              </a>
+              </Link>
             </li>
             <li>
-              <a href="/">
+              <Link href="/">
                 <FaInstagram />
-              </a>
+              </Link>
             </li>
             <li>
-              <a
+              <Link
                 href="https://github.com/ManishBisht777"
                 target="_blank"
                 rel="noopener noreferrer"
               >
                 <FaGithub />
-              </a>
+              </Link>
             </li>
           </ul>
         </div>
@@ -88,7 +89,7 @@ function Footer() {
           <span>
             <FaHeart />
           </span>
-          <a href="https://github.com/ManishBisht777">Manish Bisht </a>
+          <Link href="https://github.com/ManishBisht777">Manish Bisht </Link>
         </span>
       </footer>
     </>
