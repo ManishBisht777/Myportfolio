@@ -240,4 +240,7 @@
     transform: rotate(10deg);
     left: -10px;
   }
+  .introduction {
+    margin-left: 35px;
+  }
 }

@@ -137,4 +137,7 @@
   .navlinks ul a {
     margin: 0px 10px;
   }
+  .stylebtn {
+    padding: 10px 20px;
+  }
 }
