@@ -199,3 +199,30 @@
 .scrollmeto p {
   width: 100px;
 }
+
+@media (max-width: 500px) {
+  .profileimagebx {
+    display: none;
+  }
+
+  .homepage {
+    width: 100%;
+  }
+
+  .name {
+    font-size: 4rem;
+  }
+
+  .landingpage .scrollme,
+  .landingpage .scrollmeto {
+    width: 250%;
+  }
+
+  .role {
+    width: 300px;
+  }
+  .description {
+    width: 320px;
+    padding: 15px;
+  }
+}
