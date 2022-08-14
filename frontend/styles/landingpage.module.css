@@ -225,4 +225,19 @@
     width: 320px;
     padding: 15px;
   }
+
+  .scrollme {
+    left: -50px;
+    transform: rotate(354deg);
+  }
+  .scrollme,
+  .scrollmeto {
+    width: 250%;
+  }
+
+  .scrollmeto {
+    bottom: -10px;
+    transform: rotate(10deg);
+    left: -10px;
+  }
 }
