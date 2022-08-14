@@ -243,4 +243,7 @@
   .introduction {
     margin-left: 35px;
   }
+  .maindiv {
+    height: 85vh;
+  }
 }
