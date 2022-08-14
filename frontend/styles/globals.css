@@ -92,6 +92,11 @@ a {
   -webkit-transform: translateZ(20px);
   transform: translateZ(20px);
 }
+
+.swiper-slide {
+  display: flex !important;
+  justify-content: center !important;
+}
 @tailwind base;
 @tailwind components;
 @tailwind utilities;

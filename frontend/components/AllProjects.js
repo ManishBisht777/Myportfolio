@@ -15,77 +15,29 @@ import { AiFillGithub, AiOutlineLink } from "react-icons/ai";
 
 let projects = [
   {
-    name: "sample name",
-    description: "sample desc",
-    githublink: "githublink",
-    livelink: "egtsetloda",
-    startdate: "12-1-20",
-    enddate: "12-1-212",
-    techstack: ["html", "css", "js", "node", "mongodb"],
+    name: "GetSetBuy",
+    githublink: "https://github.com/ManishBisht777/GetSetBuy",
+    livelink: "https://getsetbuy.netlify.app/",
     image:
-      "https://i.picsum.photos/id/931/220/250.jpg?hmac=37E4_2yVB_qQrDBsjTvs0wIPOL_WZsf5JkKSnBLgo-U",
+      "https://res.cloudinary.com/drsm0ncyx/image/upload/v1642348420/GetsetBuy/1_tpdxxf.png",
   },
   {
-    name: "sample name 2",
-    description: "sample desc",
-    githublink: "githublasdasdadink",
-    livelink: "livelink",
-    startdate: "12-1-20",
-    enddate: "12-1-212",
-    techstack: ["html", "css", "js", "node", "mongodb"],
+    name: "PortFolio App",
+    githublink: "https://github.com/ManishBisht777/Myportfolio",
+    livelink: "https://manishbishtportfolio.netlify.app/",
     image:
-      "https://i.picsum.photos/id/931/220/250.jpg?hmac=37E4_2yVB_qQrDBsjTvs0wIPOL_WZsf5JkKSnBLgo-U",
+      "https://res.cloudinary.com/drsm0ncyx/image/upload/v1660472709/projects/portfolio_dikjzp.png",
   },
   {
-    name: "sample name 3",
-    description: "sample desc",
-    githublink: "githublink",
-    livelink: "asdad",
-    startdate: "12-1-20",
-    enddate: "12-1-212",
-    techstack: ["html", "css", "js", "node", "mongodb"],
+    name: "GetSetBuy",
+    githublink: "https://github.com/ManishBisht777/GetSetBuy",
+    livelink: "https://getsetbuy.netlify.app/",
     image:
-      "https://i.picsum.photos/id/931/220/250.jpg?hmac=37E4_2yVB_qQrDBsjTvs0wIPOL_WZsf5JkKSnBLgo-U",
-  },
-  {
-    name: "sample name 4",
-    description: "sample desc",
-    githublink: "githublink",
-    livelink: "adadasdasda",
-    startdate: "12-1-20",
-    enddate: "12-1-212",
-    techstack: ["html", "css", "js", "node", "mongodb"],
-    image:
-      "https://i.picsum.photos/id/931/220/250.jpg?hmac=37E4_2yVB_qQrDBsjTvs0wIPOL_WZsf5JkKSnBLgo-U",
-  },
-  {
-    name: "sample name 5",
-    description: "sample desc",
-    githublink: "asdasdadsad",
-    livelink: "livelink",
-    startdate: "12-1-20",
-    enddate: "12-1-212",
-    techstack: ["html", "css", "js", "node", "mongodb"],
-    image:
-      "https://i.picsum.photos/id/931/220/250.jpg?hmac=37E4_2yVB_qQrDBsjTvs0wIPOL_WZsf5JkKSnBLgo-U",
+      "https://res.cloudinary.com/drsm0ncyx/image/upload/v1642348420/GetsetBuy/1_tpdxxf.png",
   },
 ];
 
 const AllProjects = (props) => {
-  // const [data, setdata] = useState("");
-
-  // React.useEffect(() => {
-  //   const fetchdata = async () => {
-  //     let res = await fetch(
-  //       `${process.env.NEXT_PUBLIC_STRAPI_URL}/api/projects?populate=*`
-  //     );
-  //     const json = await res.json();
-  //     setdata(json);
-  //   };
-
-  //   fetchdata();
-  // }, []);
-
   return (
     <div className={Style.allprojectbx}>
       <h2>All Projects </h2>
@@ -150,22 +102,5 @@ const AllProjects = (props) => {
     </div>
   );
 };
-
-// export async function getServerSideProps(context) {
-//   let headers = {
-//     Authorization:
-//       "Bearer 23d0e366c6479ab7e52a182aacea18d843c4495b8ef1b29011e83e632cc547ad3ee1d2dd3d522a96e2bf35e64a0fe80694238344ab3846479abc1a57856090a35f393765ad1e240776a994fddebe095b393f5bad510c514be6c11d70d91c95abdc84882cf81c3d1878d1f61c30d60e5a46abdc6ed2ee6172ac2b19b9999ee22f",
-//   };
-//   let res = await fetch("http://localhost:1337/api/projects?populate=*", {
-//     headers: headers,
-//   });
-
-//   let projects = await res.json();
-//   console.log(projects);
-
-//   return {
-//     props: { projects: projects }, // will be passed to the page component as props
-//   };
-// }
 
 export default AllProjects;

@@ -21,9 +21,9 @@ import style from "../styles/timeline.module.css";
 const timelines = [
   {
     id: "1",
-    date: "Who Knows",
-    name: "Google",
-    description: "SDE",
+    date: "14-07-2022",
+    name: "CurlCure",
+    description: "Web Developer",
   },
   {
     id: "2",
