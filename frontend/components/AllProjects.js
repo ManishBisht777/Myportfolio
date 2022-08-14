@@ -92,17 +92,23 @@ const AllProjects = (props) => {
 
       <div className={Style.sliderdiv}>
         <Swiper
-          slidesPerView={4}
+          slidesPerView={1}
           spaceBetween={10}
           loop={true}
           centeredSlides={true}
-          // autoplay={{
-          //   delay: 2500,
-          //   disableOnInteraction: false,
-          // }}
           navigation={true}
           modules={[Navigation, Autoplay]}
-          // className="mySwiper"
+          breakpoints={{
+            640: {
+              slidesPerView: 2,
+            },
+            768: {
+              slidesPerView: 3,
+            },
+            1024: {
+              slidesPerView: 4,
+            },
+          }}
         >
           {projects.map((item, index) => {
             return (
