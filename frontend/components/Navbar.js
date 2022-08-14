@@ -46,12 +46,12 @@ const Navbar = () => {
           <Link href="/About">
             <motion.a variants={item}>About</motion.a>
           </Link>
-          <Link href="/Demo">
+          {/* <Link href="/Demo">
             <motion.a variants={item}>Tools</motion.a>
           </Link>
           <Link href="/Login">
             <motion.a variants={item}>Login</motion.a>
-          </Link>
+          </Link> */}
         </motion.ul>
       </div>
       <div className={styles.div3}>
