@@ -44,7 +44,7 @@ const TopProjects = () => {
   // }, []);
 
   return (
-    <div className={styles.container}>
+    <div className={styles.container} id="project">
       <div className={styles.titlecontainer}>
         <h3 className={styles.heading}>
           Discover <br /> My Best Projects Here
@@ -54,9 +54,11 @@ const TopProjects = () => {
           Journey of my <br />
           <span className={styles.span}>Web Developement</span>
         </p>
-        <button className={styles.discover}>Discover</button>
+        <button className={styles.discover}>
+          <a href="#topproject">Discover</a>
+        </button>
       </div>
-      <div className={styles.projects}>
+      <div className={styles.projects} id="topproject">
         {topproject.map((item, index) => {
           return (
             <TopProjectCard

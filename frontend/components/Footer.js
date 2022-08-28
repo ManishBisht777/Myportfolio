@@ -21,31 +21,31 @@ function Footer() {
           <h4>Socials As</h4>
           <ul>
             <li>
-              <Link
+              <a
                 href="https://github.com/ManishBisht777"
                 target="_blank"
                 rel="noreferrer"
               >
                 <FaGithub />
-              </Link>
+              </a>
             </li>
             <li>
-              <Link
+              <a
                 href="https://www.linkedin.com/in/manish-bisht-21b02b220/"
                 target="_blank"
                 rel="noreferrer"
               >
                 <AiFillLinkedin />
-              </Link>
+              </a>
             </li>
             <li>
-              <Link
+              <a
                 href="https://leetcode.com/ManishBisht777/"
                 target="_blank"
                 rel="noreferrer"
               >
                 <SiLeetcode />
-              </Link>
+              </a>
             </li>
           </ul>
         </div>

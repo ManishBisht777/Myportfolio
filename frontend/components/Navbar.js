@@ -43,9 +43,9 @@ const Navbar = () => {
           <Link href="/Home">
             <motion.a variants={item}>Home</motion.a>
           </Link>
-          <Link href="/About">
+          {/* <Link href="/About">
             <motion.a variants={item}>About</motion.a>
-          </Link>
+          </Link> */}
           {/* <Link href="/Demo">
             <motion.a variants={item}>Tools</motion.a>
           </Link>
@@ -55,7 +55,9 @@ const Navbar = () => {
         </motion.ul>
       </div>
       <div className={styles.div3}>
-        <button className={styles.stylebtn}>Hire me</button>
+        <button className={styles.stylebtn}>
+          <a href="mailto:manishbistht9711@gmail.com">Hire me</a>
+        </button>
       </div>
     </motion.div>
   );

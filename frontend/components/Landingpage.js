@@ -30,7 +30,7 @@ const Landingpage = () => {
             I am Man <span>i</span> sh
           </h4>
         </div>
-        <h4 className={style.role}>FrontEnd Developer</h4>
+        <h4 className={style.role}>Fullstack Developer</h4>
         <p className={style.description}>
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus ea,
           esse minus recusandae repellendus provident est in! Repellat numquam
@@ -45,7 +45,7 @@ const Landingpage = () => {
             transition={{ delay: 3.5 }}
             className={style.explore}
           >
-            Explore
+            <a href="#project">Explore</a>
           </motion.button>
           <motion.button
             initial="hidden"
@@ -54,7 +54,13 @@ const Landingpage = () => {
             transition={{ delay: 3.5 }}
             className={style.explore}
           >
-            Resume
+            <a
+              rel="noopener noreferrer"
+              href="https://drive.google.com/file/d/1ArM9fG7idIXL0j_sVAa7WnO0E5B0uCRK/view?usp=sharing"
+              target="_blank"
+            >
+              Resume
+            </a>
           </motion.button>
         </div>
       </motion.div>

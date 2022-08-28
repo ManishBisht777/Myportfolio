@@ -28,13 +28,6 @@ let projects = [
     image:
       "https://res.cloudinary.com/drsm0ncyx/image/upload/v1660472709/projects/portfolio_dikjzp.png",
   },
-  {
-    name: "GetSetBuy",
-    githublink: "https://github.com/ManishBisht777/GetSetBuy",
-    livelink: "https://getsetbuy.netlify.app/",
-    image:
-      "https://res.cloudinary.com/drsm0ncyx/image/upload/v1642348420/GetsetBuy/1_tpdxxf.png",
-  },
 ];
 
 const AllProjects = (props) => {
@@ -77,18 +70,22 @@ const AllProjects = (props) => {
                     </div>
                     <div className={Style.card_links}>
                       <button>
-                        <Link
-                          href="https://getsetbuy.netlify.app/"
+                        <a
+                          href={item.githublink}
                           target="_blank"
-                          rel="noreferrer"
+                          rel="noopener noreferrer"
                         >
                           <AiFillGithub size={20} />
-                        </Link>
+                        </a>
                       </button>
                       <button>
-                        <Link href={`${item.livelink}`}>
+                        <a
+                          target="_blank"
+                          rel="noopener noreferrer"
+                          href={item.livelink}
+                        >
                           <AiOutlineLink size={20} />
-                        </Link>
+                        </a>
                       </button>
                     </div>
                   </div>

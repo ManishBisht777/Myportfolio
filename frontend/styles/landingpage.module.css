@@ -31,7 +31,6 @@
   color: darkgoldenrod;
   font-size: 15px;
   margin: 0 20px;
-  font-weight: 600;
   width: 400px;
   margin-bottom: -40px;
   margin-left: 50px;
@@ -52,12 +51,13 @@
   text-align: justify;
   color: rgb(151 151 151);
   margin-left: 20px;
+  margin-top: 10px;
   font-family: "Roboto", sans-serif;
   font-weight: 100;
 }
 
 .name span {
-  color: hotpink;
+  color: #bd2e3e;
   margin: -15px;
 }
 
