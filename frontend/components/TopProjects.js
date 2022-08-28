@@ -9,21 +9,24 @@ import Link from "next/link";
 const topproject = [
   {
     id: "01",
-    image: "https://picsum.photos/220/250",
+    link: "getsetbuy.netlify.app/",
     name: "project 1",
-    link: "Https://getsetbuy.netlify.app/",
+    image:
+      "https://res.cloudinary.com/drsm0ncyx/image/upload/v1642348420/GetsetBuy/1_tpdxxf.png",
   },
   {
     id: "02",
-    image: "https://picsum.photos/220/250",
+    image:
+      "https://res.cloudinary.com/drsm0ncyx/image/upload/v1660472709/projects/portfolio_dikjzp.png",
     name: "project 2",
-    link: "getsetbuy.netlify.app/",
+    link: "https://manishbishtportfolio.netlify.app/",
   },
   {
     id: "03",
-    image: "https://picsum.photos/220/250",
+    image:
+      "https://res.cloudinary.com/drsm0ncyx/image/upload/v1661678830/projects/notesapp_qboei8.png",
     name: "project 3",
-    link: "getsetbuy.netlify.app/",
+    link: "https://github.com/ManishBisht777/GetyourNotes",
   },
 ];
 
